@@ -1,0 +1,14 @@
+.toilet {
+  font-family: sans-serif;
+}
+.toilet .stage {
+  height: 600px !important;
+}
+.open {
+  -webkit-transform: rotateY(-90deg);
+}
+.animate {
+  -webkit-transform-origin: 0% 50%;
+  transition-property: -webkit-transform;
+  transition-duration: 5s;
+}

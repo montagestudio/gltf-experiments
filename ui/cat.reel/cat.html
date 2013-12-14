@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="cat.css" />
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {
+                        "#": "cat"
+                    }
+                },
+                "bindings": {
+                    "status": {
+                        "<-": "@scene.status"
+                    }
+                }
+            },
+            "scene": {
+                "prototype": "mjs-volume/runtime/scene",
+                "properties": {
+                    "path": "model/cat/Creature.json"
+                }
+            },
+            "cat": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "ID3",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('.scale')": {
+                        "<-": "true"
+                    }
+                }
+            },
+            "viewer": {
+                "prototype": "mjs-volume/ui/view.reel",
+                "properties": {
+                    "element": {
+                        "#": "viewer"
+                    },
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div data-montage-id="cat" class="cat">
+        <h1 id="top">I was in a WebGL demo once</h1>
+        <h1 id="bottom">It was graphic</h1>
+        <div data-montage-id="viewer" class="stage"></div>
+    </div>
+</body>
+
+</html>

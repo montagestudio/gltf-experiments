@@ -1,0 +1,9 @@
+.toggle {
+  font-family: sans-serif;
+}
+.toggle .stage {
+  height: 800px !important;
+}
+.hide {
+  visibility: hidden;
+}

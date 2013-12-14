@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="penguin.css" />
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {
+                        "#": "penguin"
+                    }
+                }
+            },
+            "scene": {
+                "prototype": "mjs-volume/runtime/scene",
+                "properties": {
+                    "path": "model/penguin/penguin.json"
+                }
+            },
+            "viewer": {
+                "prototype": "mjs-volume/ui/view.reel",
+                "properties": {
+                    "element": {
+                        "#": "viewer"
+                    },
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+            "monocle": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "Monocle",
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+            "hat": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "TopHat",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('.grow:hover')": {
+                        "<-": "true"
+                    }
+                },
+                "listeners": [{
+                    "type": "action",
+                    "listener": {
+                        "@": "owner"
+                    }
+                }]
+            },
+            "text": {
+                "prototype": "montage/ui/text.reel",
+                "properties": {
+                    "element": {
+                        "#": "heading"
+                    },
+                    "value": ""
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div data-montage-id="penguin" class="penguin">
+        <h1 data-montage-id="heading"></h1>
+        <div data-montage-id="viewer" class="stage"></div>
+    </div>
+</body>
+
+</html>

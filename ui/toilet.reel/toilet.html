@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="toilet.css" />
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {
+                        "#": "toilet"
+                    }
+                },
+                "bindings": {
+                    "status": {
+                        "<-": "@scene.status"
+                    }
+                }
+            },
+            "scene": {
+                "prototype": "mjs-volume/runtime/scene",
+                "properties": {
+                    "path": "model/toilet/toilet.json"
+                }
+            },
+            "lid": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "ID159",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('.open')": {
+                        "<-": "@owner.lidOpen"
+                    },
+                    "classList.has('.animate')": {
+                        "<-": "true"
+                    }
+                }
+            },
+            "viewer": {
+                "prototype": "mjs-volume/ui/view.reel",
+                "properties": {
+                    "element": {
+                        "#": "viewer"
+                    },
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+            "button": {
+                "prototype": "matte/ui/button.reel",
+                "properties": {
+                    "element": {
+                        "#": "button"
+                    }
+                },
+                "listeners": [{
+                    "type": "action",
+                    "listener": {
+                        "@": "owner"
+                    }
+                }]
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div data-montage-id="toilet" class="toilet">
+        <button data-montage-id="button">Click Me</button>
+        <div data-montage-id="viewer" class="stage"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MontageJS Application</title>
+
+    <script src="node_modules/montage/montage.js" async></script>
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "prototype": "montage/ui/loader.reel",
+            "properties": {
+                "mainModule": "ui/penguin.reel",
+                "mainName": "Penguin"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <span class="loading"></span>
+</body>
+</html>

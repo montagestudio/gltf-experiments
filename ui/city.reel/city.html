@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="city.css" />
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {
+                        "#": "city"
+                    }
+                }
+            },
+            "scene": {
+                "prototype": "mjs-volume/runtime/scene",
+                "properties": {
+                    "path": "model/vcity/vc.json"
+                }
+            },
+            "viewer": {
+                "prototype": "mjs-volume/ui/view.reel",
+                "properties": {
+                    "allowsViewPointControl": false,
+                    "element": {
+                        "#": "viewer"
+                    },
+                    "scene": {
+                        "@": "scene"
+                    },
+                    "viewPoint": {
+                        "@": "camera1"
+                    }
+                },
+                "bindings": {
+                    "viewPoint": {
+                        "<-": "@cameras.value.cam"
+                    }
+                }
+            },
+            "camera1": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node-Camera02",
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+            "camera2": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node-Camera03",
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+            "camera3": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node-Camera04",
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+            "camera4": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node-Camera05",
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+            "cameras": {
+                "prototype": "digit/ui/select.reel",
+                "properties": {
+                    "element": {
+                        "#": "cameras"
+                    },
+                    "content": [{
+                        "label": "Camera 1",
+                        "cam": {
+                            "@": "camera1"
+                        }
+                    }, {
+                        "label": "Camera 2",
+                        "cam": {
+                            "@": "camera2"
+                        }
+                    }, {
+                        "label": "Camera 3",
+                        "cam": {
+                            "@": "camera3"
+                        }
+                    }, {
+                        "label": "Camera 4",
+                        "cam": {
+                            "@": "camera4"
+                        }
+                    }]
+                },
+                "listeners": [{
+                    "type": "action",
+                    "listener": {
+                        "@": "owner"
+                    }
+                }]
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div data-montage-id="city" class="city">
+        <div data-montage-id="viewer" class="stage"></div>
+        <h1>Select a camera:</h1>
+        <select data-montage-id="cameras" class="cameras"></select>
+    </div>
+</body>
+
+</html>

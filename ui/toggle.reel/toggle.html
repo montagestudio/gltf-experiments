@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="toggle.css" />
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {
+                        "#": "toggle"
+                    }
+                }
+            },
+            "scene": {
+                "prototype": "mjs-volume/runtime/scene",
+                "properties": {
+                    "path": "model/penguin/penguin.json"
+                }
+            },
+            "viewer": {
+                "prototype": "mjs-volume/ui/view.reel",
+                "properties": {
+                    "element": {
+                        "#": "viewer"
+                    },
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+            "monocle": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "Monocle",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('.hide')": {
+                        "<-": "!@checkbox.checked"
+                    }
+                }
+            },
+            "hat": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "TopHat",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('.hide')": {
+                        "<-": "!@checkbox.checked"
+                    }
+                }
+            },
+            "checkbox": {
+                "prototype": "digit/ui/checkbox.reel",
+                "properties": {
+                    "element": {
+                        "#": "checkbox"
+                    },
+                    "checked": false
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div data-montage-id="toggle" class="toggle">
+        <input type="checkbox" data-montage-id="checkbox" /><span style="margin-left: 10px">Fancy</span>
+        <div data-montage-id="viewer" class="stage"></div>
+    </div>
+</body>
+
+</html>
