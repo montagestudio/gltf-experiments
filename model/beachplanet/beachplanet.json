@@ -1,0 +1,2808 @@
+{
+    "accessors": {
+        "attribute_104": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 292992,
+            "byteStride": 12,
+            "count": 6768,
+            "max": [
+                2.66269,
+                0.669098,
+                1.08444
+            ],
+            "min": [
+                -0.631181,
+                -2.24715,
+                -0.309476
+            ],
+            "type": 35665
+        },
+        "attribute_106": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 374208,
+            "byteStride": 12,
+            "count": 6768,
+            "max": [
+                0.997962,
+                0.999434,
+                0.999932
+            ],
+            "min": [
+                -0.998871,
+                -0.998618,
+                -0.227209
+            ],
+            "type": 35665
+        },
+        "attribute_108": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 455424,
+            "byteStride": 8,
+            "count": 6768,
+            "max": [
+                0.995459,
+                0.995522
+            ],
+            "min": [
+                0.00435238,
+                0.00594437
+            ],
+            "type": 35664
+        },
+        "attribute_131": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 509568,
+            "byteStride": 12,
+            "count": 1485,
+            "max": [
+                6.45884,
+                0.885409,
+                0.355489
+            ],
+            "min": [
+                -0.486402,
+                -1.01636,
+                -0.366993
+            ],
+            "type": 35665
+        },
+        "attribute_133": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 527388,
+            "byteStride": 12,
+            "count": 1485,
+            "max": [
+                0.560676,
+                0.687425,
+                0.999458
+            ],
+            "min": [
+                -0.483262,
+                -0.308048,
+                0.689317
+            ],
+            "type": 35665
+        },
+        "attribute_135": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 545208,
+            "byteStride": 8,
+            "count": 1485,
+            "max": [
+                0.993447,
+                0.995521
+            ],
+            "min": [
+                0.00402137,
+                0.00432843
+            ],
+            "type": 35664
+        },
+        "attribute_158": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 557088,
+            "byteStride": 12,
+            "count": 1452,
+            "max": [
+                0.508696,
+                0.508208,
+                0.424409
+            ],
+            "min": [
+                -0.503965,
+                -0.674502,
+                -0.101444
+            ],
+            "type": 35665
+        },
+        "attribute_160": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 574512,
+            "byteStride": 12,
+            "count": 1452,
+            "max": [
+                0.999999,
+                1,
+                1
+            ],
+            "min": [
+                -0.999999,
+                -1,
+                -0.999283
+            ],
+            "type": 35665
+        },
+        "attribute_162": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 591936,
+            "byteStride": 8,
+            "count": 1452,
+            "max": [
+                0.918018,
+                0.996049
+            ],
+            "min": [
+                0.00455255,
+                0.00424057
+            ],
+            "type": 35664
+        },
+        "attribute_185": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 603552,
+            "byteStride": 12,
+            "count": 336,
+            "max": [
+                0.0167466,
+                0.788057,
+                0.996081
+            ],
+            "min": [
+                -0.0117607,
+                -0.0219435,
+                -0.996081
+            ],
+            "type": 35665
+        },
+        "attribute_187": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 607584,
+            "byteStride": 12,
+            "count": 336,
+            "max": [
+                1,
+                1,
+                1
+            ],
+            "min": [
+                -1,
+                -1,
+                -1
+            ],
+            "type": 35665
+        },
+        "attribute_189": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 611616,
+            "byteStride": 8,
+            "count": 336,
+            "max": [
+                0.910374,
+                0.995834
+            ],
+            "min": [
+                0.00419327,
+                0.00416148
+            ],
+            "type": 35664
+        },
+        "attribute_212": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 614304,
+            "byteStride": 12,
+            "count": 1764,
+            "max": [
+                0.391208,
+                0.46151,
+                0.636824
+            ],
+            "min": [
+                -0.00918268,
+                -0.0631264,
+                -0.0599392
+            ],
+            "type": 35665
+        },
+        "attribute_214": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 635472,
+            "byteStride": 12,
+            "count": 1764,
+            "max": [
+                1,
+                1,
+                1
+            ],
+            "min": [
+                -1,
+                -1,
+                -1
+            ],
+            "type": 35665
+        },
+        "attribute_216": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 656640,
+            "byteStride": 8,
+            "count": 1764,
+            "max": [
+                0.991513,
+                0.99118
+            ],
+            "min": [
+                0.00956991,
+                0.0408901
+            ],
+            "type": 35664
+        },
+        "attribute_23": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 0,
+            "byteStride": 12,
+            "count": 438,
+            "max": [
+                0.910798,
+                0.772462,
+                2.76626
+            ],
+            "min": [
+                -0.909718,
+                -0.815896,
+                -0.04
+            ],
+            "type": 35665
+        },
+        "attribute_239": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 670752,
+            "byteStride": 12,
+            "count": 2421,
+            "max": [
+                146.217,
+                9.4514,
+                99.9912
+            ],
+            "min": [
+                -73.7907,
+                -62.1513,
+                -0.0176477
+            ],
+            "type": 35665
+        },
+        "attribute_241": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 699804,
+            "byteStride": 12,
+            "count": 2421,
+            "max": [
+                0.998326,
+                0.999687,
+                0.999995
+            ],
+            "min": [
+                -0.994934,
+                -0.999687,
+                -1
+            ],
+            "type": 35665
+        },
+        "attribute_243": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 728856,
+            "byteStride": 8,
+            "count": 2421,
+            "max": [
+                0.941993,
+                0.995584
+            ],
+            "min": [
+                0.00426802,
+                0.00402927
+            ],
+            "type": 35664
+        },
+        "attribute_25": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 5256,
+            "byteStride": 12,
+            "count": 438,
+            "max": [
+                1,
+                1,
+                1
+            ],
+            "min": [
+                -1,
+                -1,
+                -1
+            ],
+            "type": 35665
+        },
+        "attribute_266": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 748224,
+            "byteStride": 12,
+            "count": 1404,
+            "max": [
+                1.76141,
+                0.882961,
+                1.50357
+            ],
+            "min": [
+                0.420825,
+                -0.940323,
+                -2.4
+            ],
+            "type": 35665
+        },
+        "attribute_268": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 765072,
+            "byteStride": 12,
+            "count": 1404,
+            "max": [
+                0.999578,
+                0.99958,
+                0.995592
+            ],
+            "min": [
+                -0.999694,
+                -0.985789,
+                -0.989122
+            ],
+            "type": 35665
+        },
+        "attribute_27": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 10512,
+            "byteStride": 8,
+            "count": 438,
+            "max": [
+                0.997726,
+                0.997983
+            ],
+            "min": [
+                0.00195734,
+                0.0439259
+            ],
+            "type": 35664
+        },
+        "attribute_270": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 781920,
+            "byteStride": 8,
+            "count": 1404,
+            "max": [
+                0.956927,
+                0.995143
+            ],
+            "min": [
+                0.00411208,
+                0.00414509
+            ],
+            "type": 35664
+        },
+        "attribute_293": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 793152,
+            "byteStride": 12,
+            "count": 1068,
+            "max": [
+                4.73257,
+                6.10711,
+                0.529125
+            ],
+            "min": [
+                2.76262,
+                2.61703,
+                -6.39402
+            ],
+            "type": 35665
+        },
+        "attribute_295": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 805968,
+            "byteStride": 12,
+            "count": 1068,
+            "max": [
+                1,
+                0.989407,
+                0.992011
+            ],
+            "min": [
+                -0.999978,
+                -0.981493,
+                -0.99201
+            ],
+            "type": 35665
+        },
+        "attribute_297": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 818784,
+            "byteStride": 8,
+            "count": 1068,
+            "max": [
+                0.983807,
+                0.991613
+            ],
+            "min": [
+                0.00785873,
+                0.00857037
+            ],
+            "type": 35664
+        },
+        "attribute_320": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 827328,
+            "byteStride": 12,
+            "count": 1929,
+            "max": [
+                53.0437,
+                0.515255,
+                1.53675
+            ],
+            "min": [
+                -1.85372,
+                -50.9146,
+                -21.4566
+            ],
+            "type": 35665
+        },
+        "attribute_322": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 850476,
+            "byteStride": 12,
+            "count": 1929,
+            "max": [
+                0.999218,
+                1,
+                0.999957
+            ],
+            "min": [
+                -0.99928,
+                -1,
+                -0.999542
+            ],
+            "type": 35665
+        },
+        "attribute_324": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 873624,
+            "byteStride": 8,
+            "count": 1929,
+            "max": [
+                0.995869,
+                0.995707
+            ],
+            "min": [
+                0.00396848,
+                0.0157282
+            ],
+            "type": 35664
+        },
+        "attribute_347": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 889056,
+            "byteStride": 12,
+            "count": 864,
+            "max": [
+                0.791472,
+                1.54013,
+                0.334817
+            ],
+            "min": [
+                -0.5223,
+                -2.86137,
+                -0.121939
+            ],
+            "type": 35665
+        },
+        "attribute_349": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 899424,
+            "byteStride": 12,
+            "count": 864,
+            "max": [
+                0.523481,
+                0.48437,
+                0.999269
+            ],
+            "min": [
+                -0.427112,
+                -0.50607,
+                0.833644
+            ],
+            "type": 35665
+        },
+        "attribute_351": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 909792,
+            "byteStride": 8,
+            "count": 864,
+            "max": [
+                0.984042,
+                0.991909
+            ],
+            "min": [
+                0.00840715,
+                0.00838518
+            ],
+            "type": 35664
+        },
+        "attribute_374": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 916704,
+            "byteStride": 12,
+            "count": 600,
+            "max": [
+                6.72062,
+                2.23771,
+                0.16903
+            ],
+            "min": [
+                -0.486402,
+                -0.50552,
+                -0.128646
+            ],
+            "type": 35665
+        },
+        "attribute_376": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 923904,
+            "byteStride": 12,
+            "count": 600,
+            "max": [
+                0.523481,
+                0.43555,
+                0.999937
+            ],
+            "min": [
+                -0.435004,
+                -0.543892,
+                0.837546
+            ],
+            "type": 35665
+        },
+        "attribute_378": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 931104,
+            "byteStride": 8,
+            "count": 600,
+            "max": [
+                0.967,
+                0.99139
+            ],
+            "min": [
+                0.00929579,
+                0.00865161
+            ],
+            "type": 35664
+        },
+        "attribute_401": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 935904,
+            "byteStride": 12,
+            "count": 1974,
+            "max": [
+                36.6901,
+                50.2855,
+                2.67622
+            ],
+            "min": [
+                -43.9662,
+                -50.004,
+                -3.32378
+            ],
+            "type": 35665
+        },
+        "attribute_403": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 959592,
+            "byteStride": 12,
+            "count": 1974,
+            "max": [
+                0.999856,
+                0.999897,
+                1
+            ],
+            "min": [
+                -0.999427,
+                -0.999929,
+                -1
+            ],
+            "type": 35665
+        },
+        "attribute_405": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 983280,
+            "byteStride": 8,
+            "count": 1974,
+            "max": [
+                0.987035,
+                0.992043
+            ],
+            "min": [
+                0.00888041,
+                0.0088805
+            ],
+            "type": 35664
+        },
+        "attribute_428": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 999072,
+            "byteStride": 12,
+            "count": 1404,
+            "max": [
+                1.76141,
+                0.882961,
+                1.50357
+            ],
+            "min": [
+                0.420825,
+                -0.940323,
+                -2.4
+            ],
+            "type": 35665
+        },
+        "attribute_430": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 1015920,
+            "byteStride": 12,
+            "count": 1404,
+            "max": [
+                0.999578,
+                0.99958,
+                0.995592
+            ],
+            "min": [
+                -0.999694,
+                -0.985789,
+                -0.989122
+            ],
+            "type": 35665
+        },
+        "attribute_432": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 1032768,
+            "byteStride": 8,
+            "count": 1404,
+            "max": [
+                0.956927,
+                0.995143
+            ],
+            "min": [
+                0.00411208,
+                0.00414509
+            ],
+            "type": 35664
+        },
+        "attribute_455": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 1044000,
+            "byteStride": 12,
+            "count": 432,
+            "max": [
+                1.42968,
+                1.71557,
+                0.323922
+            ],
+            "min": [
+                -0.486402,
+                -0.528236,
+                -0.026381
+            ],
+            "type": 35665
+        },
+        "attribute_457": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 1049184,
+            "byteStride": 12,
+            "count": 432,
+            "max": [
+                0.523481,
+                0.259716,
+                0.999269
+            ],
+            "min": [
+                -0.427112,
+                -0.489718,
+                0.833644
+            ],
+            "type": 35665
+        },
+        "attribute_459": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 1054368,
+            "byteStride": 8,
+            "count": 432,
+            "max": [
+                0.984042,
+                0.991909
+            ],
+            "min": [
+                0.00840721,
+                0.00838518
+            ],
+            "type": 35664
+        },
+        "attribute_50": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 14016,
+            "byteStride": 12,
+            "count": 6042,
+            "max": [
+                7.62243,
+                7.47517,
+                2.33124
+            ],
+            "min": [
+                -7.47517,
+                -7.47517,
+                -5.25914
+            ],
+            "type": 35665
+        },
+        "attribute_52": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 86520,
+            "byteStride": 12,
+            "count": 6042,
+            "max": [
+                1,
+                0.999498,
+                1
+            ],
+            "min": [
+                -0.99999,
+                -0.997003,
+                -1
+            ],
+            "type": 35665
+        },
+        "attribute_54": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 159024,
+            "byteStride": 8,
+            "count": 6042,
+            "max": [
+                0.825095,
+                0.998978
+            ],
+            "min": [
+                0.00115028,
+                0.00105488
+            ],
+            "type": 35664
+        },
+        "attribute_77": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 207360,
+            "byteStride": 12,
+            "count": 2676,
+            "max": [
+                4.59721,
+                2.13266,
+                5.37487
+            ],
+            "min": [
+                -0.112747,
+                -0.286858,
+                2.7585e-10
+            ],
+            "type": 35665
+        },
+        "attribute_79": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 239472,
+            "byteStride": 12,
+            "count": 2676,
+            "max": [
+                0.999908,
+                0.997932,
+                1
+            ],
+            "min": [
+                -0.997941,
+                -0.984245,
+                -0.467003
+            ],
+            "type": 35665
+        },
+        "attribute_81": {
+            "bufferView": "bufferView_477",
+            "byteOffset": 271584,
+            "byteStride": 8,
+            "count": 2676,
+            "max": [
+                0.950408,
+                0.995886
+            ],
+            "min": [
+                0.00870593,
+                0.0119263
+            ],
+            "type": 35664
+        },
+        "indices_102": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 18312,
+            "count": 6768,
+            "type": 5123
+        },
+        "indices_129": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 31848,
+            "count": 1485,
+            "type": 5123
+        },
+        "indices_156": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 34818,
+            "count": 1452,
+            "type": 5123
+        },
+        "indices_183": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 37722,
+            "count": 336,
+            "type": 5123
+        },
+        "indices_21": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 0,
+            "count": 438,
+            "type": 5123
+        },
+        "indices_210": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 38394,
+            "count": 1764,
+            "type": 5123
+        },
+        "indices_237": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 41922,
+            "count": 2421,
+            "type": 5123
+        },
+        "indices_264": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 46764,
+            "count": 1404,
+            "type": 5123
+        },
+        "indices_291": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 49572,
+            "count": 1068,
+            "type": 5123
+        },
+        "indices_318": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 51708,
+            "count": 1929,
+            "type": 5123
+        },
+        "indices_345": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 55566,
+            "count": 864,
+            "type": 5123
+        },
+        "indices_372": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 57294,
+            "count": 600,
+            "type": 5123
+        },
+        "indices_399": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 58494,
+            "count": 1974,
+            "type": 5123
+        },
+        "indices_426": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 62442,
+            "count": 1404,
+            "type": 5123
+        },
+        "indices_453": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 65250,
+            "count": 432,
+            "type": 5123
+        },
+        "indices_48": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 876,
+            "count": 6042,
+            "type": 5123
+        },
+        "indices_75": {
+            "bufferView": "bufferView_478",
+            "byteOffset": 12960,
+            "count": 2676,
+            "type": 5123
+        }
+    },
+    "animations": {},
+    "asset": {
+        "extras": {
+            "premultipliedAlpha": true
+        },
+        "generator": "collada2gltf@042d7d2a3782aaf6d86961d052fc53bea8b3e424"
+    },
+    "bufferViews": {
+        "bufferView_477": {
+            "buffer": "beachplanet",
+            "byteLength": 1057824,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        "bufferView_478": {
+            "buffer": "beachplanet",
+            "byteLength": 66116,
+            "byteOffset": 1057824,
+            "target": 34963
+        },
+        "bufferView_479": {
+            "buffer": "beachplanet",
+            "byteLength": 0,
+            "byteOffset": 1123940
+        }
+    },
+    "buffers": {
+        "beachplanet": {
+            "byteLength": 1123940,
+            "path": "beachplanet.bin",
+            "type": "arraybuffer"
+        }
+    },
+    "cameras": {
+        "camera_0": {
+            "perspective": {
+                "xfov": 65.4705,
+                "zfar": 1000,
+                "znear": 1
+            },
+            "type": "perspective"
+        },
+        "camera_1": {
+            "perspective": {
+                "xfov": 65.4705,
+                "zfar": 1000,
+                "znear": 0.000999987
+            },
+            "type": "perspective"
+        },
+        "camera_2": {
+            "perspective": {
+                "xfov": 65.4705,
+                "zfar": 1000,
+                "znear": 1
+            },
+            "type": "perspective"
+        },
+        "camera_3": {
+            "perspective": {
+                "xfov": 65.4705,
+                "zfar": 100,
+                "znear": 0.000999987
+            },
+            "type": "perspective"
+        }
+    },
+    "images": {
+        "image_0": {
+            "path": "images/0_cabin_baked.jpg"
+        },
+        "image_1": {
+            "path": "images/1_background.jpg"
+        },
+        "image_10": {
+            "path": "images/10_dolphin_baked.jpg"
+        },
+        "image_11": {
+            "path": "images/11_starfish.jpg"
+        },
+        "image_12": {
+            "path": "images/12_seaGull_baked.jpg"
+        },
+        "image_13": {
+            "path": "images/13_flowers_orange.PNG"
+        },
+        "image_14": {
+            "path": "images/14_flowers_whites.PNG"
+        },
+        "image_15": {
+            "path": "images/15_logo_M.jpg"
+        },
+        "image_16": {
+            "path": "images/16_flowers_pink.PNG"
+        },
+        "image_2": {
+            "path": "images/2_trunk.JPG"
+        },
+        "image_3": {
+            "path": "images/rgba.png"
+        },
+        "image_4": {
+            "path": "images/rgba.png"
+        },
+        "image_5": {
+            "path": "images/5_assarium.png"
+        },
+        "image_6": {
+            "path": "images/6_buoy_baked.JPG"
+        },
+        "image_7": {
+            "path": "images/7_cabin_door.JPG"
+        },
+        "image_8": {
+            "path": "images/8_toys.JPG"
+        },
+        "image_9": {
+            "path": "images/9_palm.jpg"
+        }
+    },
+    "lights": {
+        "EnvironmentAmbientLight": {
+            "ambient": {
+                "color": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "type": "ambient"
+        }
+    },
+    "materials": {
+        "M": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_image_15",
+                    "diffuse": "texture_image_15",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "M"
+        },
+        "Standardmaterial": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_image_1",
+                    "diffuse": "texture_image_1",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "Standardmaterial"
+        },
+        "assirum": {
+            "instanceTechnique": {
+                "technique": "technique2",
+                "values": {
+                    "ambient": "texture_image_5",
+                    "diffuse": "texture_image_5",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "assirum"
+        },
+        "cabin": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_image_0",
+                    "diffuse": "texture_image_0",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "cabin"
+        },
+        "dolphin": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_image_10",
+                    "diffuse": "texture_image_10",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "dolphin"
+        },
+        "door": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_image_7",
+                    "diffuse": "texture_image_7",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "door"
+        },
+        "duck": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_image_6",
+                    "diffuse": "texture_image_6",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "duck"
+        },
+        "flowersWhite": {
+            "instanceTechnique": {
+                "technique": "technique2",
+                "values": {
+                    "ambient": "texture_image_14",
+                    "diffuse": "texture_image_14",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "flowersWhite"
+        },
+        "flowersorange": {
+            "instanceTechnique": {
+                "technique": "technique2",
+                "values": {
+                    "ambient": "texture_image_13",
+                    "diffuse": "texture_image_13",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "flowersorange"
+        },
+        "flowerspink": {
+            "instanceTechnique": {
+                "technique": "technique2",
+                "values": {
+                    "ambient": "texture_image_16",
+                    "diffuse": "texture_image_16",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "flowerspink"
+        },
+        "gears": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_image_9",
+                    "diffuse": "texture_image_9",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "gears"
+        },
+        "gull": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_image_12",
+                    "diffuse": "texture_image_12",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "gull"
+        },
+        "leaves": {
+            "instanceTechnique": {
+                "technique": "technique2",
+                "values": {
+                    "ambient": "texture_image_3",
+                    "diffuse": "texture_image_3",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "leaves"
+        },
+        "starfish": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_image_11",
+                    "diffuse": "texture_image_11",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "starfish"
+        },
+        "toys": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_image_8",
+                    "diffuse": "texture_image_8",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "toys"
+        },
+        "trunk": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_image_2",
+                    "diffuse": "texture_image_2",
+                    "emission": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shininess": 0,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "trunk"
+        }
+    },
+    "meshes": {
+        "geom-CabineDoor": {
+            "name": "CabineDoor",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_187",
+                        "POSITION": "attribute_185",
+                        "TEXCOORD_0": "attribute_189"
+                    },
+                    "indices": "indices_183",
+                    "material": "door",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-SeanGull01": {
+            "name": "SeanGull01",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_322",
+                        "POSITION": "attribute_320",
+                        "TEXCOORD_0": "attribute_324"
+                    },
+                    "indices": "indices_318",
+                    "material": "gull",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-ascii002": {
+            "name": "ascii002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_403",
+                        "POSITION": "attribute_401",
+                        "TEXCOORD_0": "attribute_405"
+                    },
+                    "indices": "indices_399",
+                    "material": "M",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-assarum002": {
+            "name": "assarum002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_133",
+                        "POSITION": "attribute_131",
+                        "TEXCOORD_0": "attribute_135"
+                    },
+                    "indices": "indices_129",
+                    "material": "assirum",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-background": {
+            "name": "background",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_52",
+                        "POSITION": "attribute_50",
+                        "TEXCOORD_0": "attribute_54"
+                    },
+                    "indices": "indices_48",
+                    "material": "Standardmaterial",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-buoy": {
+            "name": "buoy",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_160",
+                        "POSITION": "attribute_158",
+                        "TEXCOORD_0": "attribute_162"
+                    },
+                    "indices": "indices_156",
+                    "material": "duck",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-cabine": {
+            "name": "cabine",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_25",
+                        "POSITION": "attribute_23",
+                        "TEXCOORD_0": "attribute_27"
+                    },
+                    "indices": "indices_21",
+                    "material": "cabin",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-dauphin001": {
+            "name": "dauphin001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_268",
+                        "POSITION": "attribute_266",
+                        "TEXCOORD_0": "attribute_270"
+                    },
+                    "indices": "indices_264",
+                    "material": "dolphin",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-dauphin003": {
+            "name": "dauphin003",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_430",
+                        "POSITION": "attribute_428",
+                        "TEXCOORD_0": "attribute_432"
+                    },
+                    "indices": "indices_426",
+                    "material": "dolphin",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-etoile2mer003": {
+            "name": "etoile2mer003",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_295",
+                        "POSITION": "attribute_293",
+                        "TEXCOORD_0": "attribute_297"
+                    },
+                    "indices": "indices_291",
+                    "material": "starfish",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-feuille005": {
+            "name": "feuille005",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_106",
+                        "POSITION": "attribute_104",
+                        "TEXCOORD_0": "attribute_108"
+                    },
+                    "indices": "indices_102",
+                    "material": "leaves",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-fleursBlanches": {
+            "name": "fleursBlanches",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_376",
+                        "POSITION": "attribute_374",
+                        "TEXCOORD_0": "attribute_378"
+                    },
+                    "indices": "indices_372",
+                    "material": "flowersWhite",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-fleursOranges": {
+            "name": "fleursOranges",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_349",
+                        "POSITION": "attribute_347",
+                        "TEXCOORD_0": "attribute_351"
+                    },
+                    "indices": "indices_345",
+                    "material": "flowersorange",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-fleursRoses001": {
+            "name": "fleursRoses001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_457",
+                        "POSITION": "attribute_455",
+                        "TEXCOORD_0": "attribute_459"
+                    },
+                    "indices": "indices_453",
+                    "material": "flowerspink",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-palmes001": {
+            "name": "palmes001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_241",
+                        "POSITION": "attribute_239",
+                        "TEXCOORD_0": "attribute_243"
+                    },
+                    "indices": "indices_237",
+                    "material": "gears",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-rateau": {
+            "name": "rateau",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_214",
+                        "POSITION": "attribute_212",
+                        "TEXCOORD_0": "attribute_216"
+                    },
+                    "indices": "indices_210",
+                    "material": "toys",
+                    "primitive": 4
+                }
+            ]
+        },
+        "geom-tronc005": {
+            "name": "tronc005",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "attribute_79",
+                        "POSITION": "attribute_77",
+                        "TEXCOORD_0": "attribute_81"
+                    },
+                    "indices": "indices_75",
+                    "material": "trunk",
+                    "primitive": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "node-CabineDoor": {
+            "children": [
+                "node_11"
+            ],
+            "matrix": [
+                0.996195,
+                -0.087156,
+                0,
+                0,
+                0.087156,
+                0.996195,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0.0829506,
+                -1.40512,
+                1.03588,
+                1
+            ],
+            "name": "CabineDoor"
+        },
+        "node-Camera_buoy": {
+            "camera": "camera_1",
+            "children": [],
+            "matrix": [
+                0.173648,
+                0.984808,
+                0,
+                0,
+                -0.0858317,
+                0.0151345,
+                0.996195,
+                0,
+                0.98106,
+                -0.172987,
+                0.0871558,
+                0,
+                6.21189,
+                -2.86913,
+                0.841089,
+                1
+            ],
+            "name": "Camera_buoy"
+        },
+        "node-Camera_cabin": {
+            "camera": "camera_0",
+            "children": [],
+            "matrix": [
+                0.173648,
+                0.984808,
+                0,
+                0,
+                -0.17101,
+                0.0301537,
+                0.984808,
+                0,
+                0.969846,
+                -0.17101,
+                0.173648,
+                0,
+                6.27945,
+                -0.759936,
+                2.28209,
+                1
+            ],
+            "name": "Camera_cabin"
+        },
+        "node-Camera_dolphins": {
+            "camera": "camera_3",
+            "children": [],
+            "matrix": [
+                0.819152,
+                0.573577,
+                0,
+                0,
+                -0.242404,
+                0.346189,
+                0.906308,
+                0,
+                0.519837,
+                -0.742404,
+                0.422618,
+                0,
+                10.1086,
+                -11.1661,
+                5.13561,
+                1
+            ],
+            "name": "Camera_dolphins"
+        },
+        "node-Camera_flowers": {
+            "camera": "camera_2",
+            "children": [],
+            "matrix": [
+                0.820497,
+                0.568557,
+                -0.0593912,
+                0,
+                -0.323863,
+                0.547941,
+                0.77128,
+                0,
+                0.47106,
+                -0.613599,
+                0.633718,
+                0,
+                6.48895,
+                0.503111,
+                5.01268,
+                1
+            ],
+            "name": "Camera_flowers"
+        },
+        "node-SeanGull01": {
+            "children": [],
+            "matrix": [
+                0.0664058,
+                0.118098,
+                0,
+                0,
+                -0.118098,
+                0.0664058,
+                0,
+                0,
+                0,
+                0,
+                0.135488,
+                0,
+                -0.512757,
+                -1.03884,
+                2.86526,
+                1
+            ],
+            "meshes": [
+                "geom-SeanGull01"
+            ],
+            "name": "SeanGull01"
+        },
+        "node-ascii002": {
+            "children": [],
+            "matrix": [
+                0.000179876,
+                0.00030731,
+                -0.00742846,
+                0,
+                -0.00641834,
+                0.00375682,
+                0,
+                0,
+                0.00375251,
+                0.00641098,
+                0.000356083,
+                0,
+                -1.21318,
+                -1.37159,
+                0.344541,
+                1
+            ],
+            "meshes": [
+                "geom-ascii002"
+            ],
+            "name": "ascii002"
+        },
+        "node-assarum002": {
+            "children": [
+                "node_7"
+            ],
+            "matrix": [
+                0.492404,
+                0.867945,
+                0.0648786,
+                0,
+                -0.852868,
+                0.46629,
+                0.234923,
+                0,
+                0.173648,
+                -0.17101,
+                0.969846,
+                0,
+                0.290254,
+                3.58965,
+                0.288397,
+                1
+            ],
+            "name": "assarum002"
+        },
+        "node-background": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                2.40649,
+                0.00608208,
+                -0.414075,
+                1
+            ],
+            "meshes": [
+                "geom-background"
+            ],
+            "name": "background"
+        },
+        "node-buoy": {
+            "children": [
+                "node_9"
+            ],
+            "matrix": [
+                0.70141,
+                0,
+                0,
+                0,
+                0,
+                0.70141,
+                0,
+                0,
+                0,
+                0,
+                0.70141,
+                0,
+                2.22241,
+                -2.40823,
+                -0.366339,
+                1
+            ],
+            "name": "buoy"
+        },
+        "node-cabine": {
+            "children": [
+                "node_2"
+            ],
+            "matrix": [
+                -1,
+                3.89414e-07,
+                0,
+                0,
+                -3.89414e-07,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -0.757949,
+                -1.01372,
+                1.39755,
+                1
+            ],
+            "name": "cabine"
+        },
+        "node-dauphin001": {
+            "children": [
+                "node_16"
+            ],
+            "matrix": [
+                0.328845,
+                -0.633257,
+                0.00131744,
+                0,
+                0.263731,
+                0.138302,
+                0.648439,
+                0,
+                -0.575727,
+                -0.29835,
+                0.297792,
+                0,
+                5.73322,
+                -4.10798,
+                -1.68155,
+                1
+            ],
+            "name": "dauphin001"
+        },
+        "node-dauphin003": {
+            "children": [
+                "node_24"
+            ],
+            "matrix": [
+                0.235037,
+                -0.452611,
+                0.000941619,
+                0,
+                -0.0308438,
+                -0.0149583,
+                0.508847,
+                0,
+                -0.45156,
+                -0.234562,
+                -0.0342666,
+                0,
+                4.33086,
+                -3.47102,
+                -1.37457,
+                1
+            ],
+            "name": "dauphin003"
+        },
+        "node-etoile2mer003": {
+            "children": [
+                "node_18"
+            ],
+            "matrix": [
+                -0.0549106,
+                -0.0317026,
+                -0.499251,
+                0,
+                -0.251631,
+                0.435837,
+                -5.54306e-09,
+                0,
+                0.432364,
+                0.249626,
+                -0.0634053,
+                0,
+                8.9524,
+                3.4611,
+                -1.06033,
+                1
+            ],
+            "name": "etoile2mer003"
+        },
+        "node-feuille005": {
+            "children": [],
+            "matrix": [
+                0.324304,
+                1.83922,
+                0,
+                0,
+                -1.83922,
+                0.324304,
+                0,
+                0,
+                0,
+                0,
+                1.86759,
+                0,
+                -0.362481,
+                0.674056,
+                3.38059,
+                1
+            ],
+            "meshes": [
+                "geom-feuille005"
+            ],
+            "name": "feuille005"
+        },
+        "node-fleursBlanches": {
+            "children": [],
+            "matrix": [
+                -0.651638,
+                0.284,
+                0.0178747,
+                0,
+                -0.284238,
+                -0.651741,
+                -0.00702096,
+                0,
+                0.0135793,
+                -0.0135794,
+                0.710801,
+                0,
+                5.81269,
+                6.32723,
+                0.214385,
+                1
+            ],
+            "meshes": [
+                "geom-fleursBlanches"
+            ],
+            "name": "fleursBlanches"
+        },
+        "node-fleursOranges": {
+            "children": [],
+            "matrix": [
+                -0.342404,
+                0.871418,
+                0.0235436,
+                0,
+                -0.871737,
+                -0.342279,
+                -0.00924763,
+                0,
+                -6.978e-08,
+                -0.0252947,
+                0.936229,
+                0,
+                1.08251,
+                4.48097,
+                0.13151,
+                1
+            ],
+            "meshes": [
+                "geom-fleursOranges"
+            ],
+            "name": "fleursOranges"
+        },
+        "node-fleursRoses001": {
+            "children": [],
+            "matrix": [
+                -0.931288,
+                0.405879,
+                0.0255457,
+                0,
+                -0.406219,
+                -0.931436,
+                -0.010034,
+                0,
+                0.0194069,
+                -0.0194071,
+                1.01584,
+                0,
+                2.25851,
+                6.80631,
+                0.219559,
+                1
+            ],
+            "meshes": [
+                "geom-fleursRoses001"
+            ],
+            "name": "fleursRoses001"
+        },
+        "node-palmes001": {
+            "children": [],
+            "matrix": [
+                -0.00138149,
+                -0.000502819,
+                0.00833761,
+                0,
+                0.00289562,
+                -0.00795566,
+                0,
+                0,
+                0.00783479,
+                0.00285163,
+                0.00147015,
+                0,
+                -1.52531,
+                -1.11059,
+                0.591187,
+                1
+            ],
+            "meshes": [
+                "geom-palmes001"
+            ],
+            "name": "palmes001"
+        },
+        "node-rateau": {
+            "children": [
+                "node_13"
+            ],
+            "matrix": [
+                0.73852,
+                0.344377,
+                -0.0712916,
+                0,
+                -0.345693,
+                0.741341,
+                0,
+                0,
+                0.0646121,
+                0.0301291,
+                0.814866,
+                0,
+                0.554085,
+                0.035982,
+                0.014059,
+                1
+            ],
+            "name": "rateau"
+        },
+        "node-tronc005": {
+            "children": [],
+            "matrix": [
+                0.798668,
+                0.389415,
+                -0.165409,
+                0,
+                -0.361504,
+                0.811684,
+                0.165409,
+                0,
+                0.219816,
+                -0.0800066,
+                0.873015,
+                0,
+                -1.47822,
+                0.873983,
+                -0.076262,
+                1
+            ],
+            "meshes": [
+                "geom-tronc005"
+            ],
+            "name": "tronc005"
+        },
+        "node_0": {
+            "children": [],
+            "light": "EnvironmentAmbientLight",
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "name": "EnvironmentAmbientLight"
+        },
+        "node_11": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0.0132828,
+                0,
+                1
+            ],
+            "meshes": [
+                "geom-CabineDoor"
+            ],
+            "name": ""
+        },
+        "node_13": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -0.0434494,
+                -0.00356631,
+                -0.001535,
+                1
+            ],
+            "meshes": [
+                "geom-rateau"
+            ],
+            "name": ""
+        },
+        "node_16": {
+            "children": [],
+            "matrix": [
+                0.996195,
+                -0.0562646,
+                0.0665569,
+                0,
+                0.056316,
+                0.998412,
+                0.00110496,
+                0,
+                -0.0665134,
+                0.00264747,
+                0.997782,
+                0,
+                -1.06858,
+                2.76236,
+                0.945518,
+                1
+            ],
+            "meshes": [
+                "geom-dauphin001"
+            ],
+            "name": ""
+        },
+        "node_18": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -4.13624,
+                -3.36959,
+                -0.419603,
+                1
+            ],
+            "meshes": [
+                "geom-etoile2mer003"
+            ],
+            "name": ""
+        },
+        "node_2": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                6.10352e-05,
+                -1.36313,
+                1
+            ],
+            "meshes": [
+                "geom-cabine"
+            ],
+            "name": ""
+        },
+        "node_24": {
+            "children": [],
+            "matrix": [
+                0.996195,
+                -0.0562646,
+                0.0665569,
+                0,
+                0.056316,
+                0.998412,
+                0.00110496,
+                0,
+                -0.0665134,
+                0.00264747,
+                0.997782,
+                0,
+                -1.06858,
+                2.76236,
+                0.945518,
+                1
+            ],
+            "meshes": [
+                "geom-dauphin003"
+            ],
+            "name": ""
+        },
+        "node_7": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -2.98622,
+                0.0654777,
+                0.00575209,
+                1
+            ],
+            "meshes": [
+                "geom-assarum002"
+            ],
+            "name": ""
+        },
+        "node_9": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                -4.44406e-09,
+                0.101668,
+                1
+            ],
+            "meshes": [
+                "geom-buoy"
+            ],
+            "name": ""
+        }
+    },
+    "profile": "WebGL 1.0.2",
+    "programs": {
+        "program_0": {
+            "attributes": [
+                "a_normal",
+                "a_position",
+                "a_texcoord0"
+            ],
+            "fragmentShader": "beachplanet0FS",
+            "vertexShader": "beachplanet0VS"
+        },
+        "program_1": {
+            "attributes": [
+                "a_normal",
+                "a_position",
+                "a_texcoord0"
+            ],
+            "fragmentShader": "beachplanet2FS",
+            "vertexShader": "beachplanet2VS"
+        }
+    },
+    "samplers": {
+        "sampler_0": {
+            "magFilter": 9729,
+            "minFilter": 9729,
+            "wrapS": 10497,
+            "wrapT": 10497
+        }
+    },
+    "scene": "defaultScene",
+    "scenes": {
+        "defaultScene": {
+            "nodes": [
+                "node_0",
+                "node-cabine",
+                "node-background",
+                "node-tronc005",
+                "node-feuille005",
+                "node-assarum002",
+                "node-buoy",
+                "node-CabineDoor",
+                "node-rateau",
+                "node-palmes001",
+                "node-dauphin001",
+                "node-etoile2mer003",
+                "node-SeanGull01",
+                "node-fleursOranges",
+                "node-fleursBlanches",
+                "node-ascii002",
+                "node-dauphin003",
+                "node-fleursRoses001",
+                "node-Camera_cabin",
+                "node-Camera_buoy",
+                "node-Camera_flowers",
+                "node-Camera_dolphins"
+            ]
+        }
+    },
+    "shaders": {
+        "beachplanet0FS": {
+            "path": "beachplanet0FS.glsl"
+        },
+        "beachplanet0VS": {
+            "path": "beachplanet0VS.glsl"
+        },
+        "beachplanet2FS": {
+            "path": "beachplanet2FS.glsl"
+        },
+        "beachplanet2VS": {
+            "path": "beachplanet2VS.glsl"
+        }
+    },
+    "skins": {},
+    "techniques": {
+        "technique1": {
+            "parameters": {
+                "ambient": {
+                    "type": 35678
+                },
+                "diffuse": {
+                    "type": 35678
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "texcoord0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "pass": "defaultPass",
+            "passes": {
+                "defaultPass": {
+                    "details": {
+                        "commonProfile": {
+                            "extras": {
+                                "doubleSided": false
+                            },
+                            "lightingModel": "Phong",
+                            "parameters": [
+                                "diffuse",
+                                "emission",
+                                "modelViewMatrix",
+                                "normalMatrix",
+                                "projectionMatrix",
+                                "shininess"
+                            ],
+                            "texcoordBindings": {
+                                "ambient": "TEXCOORD_0",
+                                "diffuse": "TEXCOORD_0"
+                            }
+                        },
+                        "type": "COLLADA-1.4.1/commonProfile"
+                    },
+                    "instanceProgram": {
+                        "attributes": {
+                            "a_normal": "normal",
+                            "a_position": "position",
+                            "a_texcoord0": "texcoord0"
+                        },
+                        "program": "program_0",
+                        "uniforms": {
+                            "u_diffuse": "diffuse",
+                            "u_emission": "emission",
+                            "u_modelViewMatrix": "modelViewMatrix",
+                            "u_normalMatrix": "normalMatrix",
+                            "u_projectionMatrix": "projectionMatrix",
+                            "u_shininess": "shininess"
+                        }
+                    },
+                    "states": {
+                        "blendEnable": 0,
+                        "cullFaceEnable": 1,
+                        "depthMask": 1,
+                        "depthTestEnable": 1
+                    }
+                }
+            }
+        },
+        "technique2": {
+            "parameters": {
+                "ambient": {
+                    "type": 35678
+                },
+                "diffuse": {
+                    "type": 35678
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "texcoord0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "pass": "defaultPass",
+            "passes": {
+                "defaultPass": {
+                    "details": {
+                        "commonProfile": {
+                            "extras": {
+                                "doubleSided": false
+                            },
+                            "lightingModel": "Phong",
+                            "parameters": [
+                                "diffuse",
+                                "emission",
+                                "modelViewMatrix",
+                                "normalMatrix",
+                                "projectionMatrix",
+                                "shininess"
+                            ],
+                            "texcoordBindings": {
+                                "ambient": "TEXCOORD_0",
+                                "diffuse": "TEXCOORD_0"
+                            }
+                        },
+                        "type": "COLLADA-1.4.1/commonProfile"
+                    },
+                    "instanceProgram": {
+                        "attributes": {
+                            "a_normal": "normal",
+                            "a_position": "position",
+                            "a_texcoord0": "texcoord0"
+                        },
+                        "program": "program_1",
+                        "uniforms": {
+                            "u_diffuse": "diffuse",
+                            "u_emission": "emission",
+                            "u_modelViewMatrix": "modelViewMatrix",
+                            "u_normalMatrix": "normalMatrix",
+                            "u_projectionMatrix": "projectionMatrix",
+                            "u_shininess": "shininess"
+                        }
+                    },
+                    "states": {
+                        "blendEnable": 1,
+                        "blendEquation": 32774,
+                        "blendFunc": {
+                            "dfactor": 771,
+                            "sfactor": 1
+                        },
+                        "cullFaceEnable": 0,
+                        "depthMask": 1,
+                        "depthTestEnable": 1
+                    }
+                }
+            }
+        }
+    },
+    "textures": {
+        "texture_image_0": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_0",
+            "target": 3553
+        },
+        "texture_image_1": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_1",
+            "target": 3553
+        },
+        "texture_image_10": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_10",
+            "target": 3553
+        },
+        "texture_image_11": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_11",
+            "target": 3553
+        },
+        "texture_image_12": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_12",
+            "target": 3553
+        },
+        "texture_image_13": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_13",
+            "target": 3553
+        },
+        "texture_image_14": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_14",
+            "target": 3553
+        },
+        "texture_image_15": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_15",
+            "target": 3553
+        },
+        "texture_image_16": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_16",
+            "target": 3553
+        },
+        "texture_image_2": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_2",
+            "target": 3553
+        },
+        "texture_image_3": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_3",
+            "target": 3553
+        },
+        "texture_image_5": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_5",
+            "target": 3553
+        },
+        "texture_image_6": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_6",
+            "target": 3553
+        },
+        "texture_image_7": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_7",
+            "target": 3553
+        },
+        "texture_image_8": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_8",
+            "target": 3553
+        },
+        "texture_image_9": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "image_9",
+            "target": 3553
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.beachplanet {
+  font-family: sans-serif;
+}
+.beachplanet .stage {
+  height: 600px !important;
+}
+.beachplanet h1 {
+  color: #fff;
+  border: #000;
+  font-family: "Impact";
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px #000;
+  font-size: 60px;
+}
+.beachplanet #top {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.beachplanet #bottom {
+  position: fixed;
+  margin-top: 450px;
+  text-align: center;
+  width: 100%;
+}
+.grow:hover {
+  -webkit-transform: scale3d(3, 3, 3);
+}
+.animate {
+  transition-property: -webkit-transform;
+  transition-duration: 5s;
+  -webkit-transform-origin: 0% 0%;
+}
