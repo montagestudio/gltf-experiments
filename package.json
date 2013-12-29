@@ -1,4 +1,6 @@
 {
+  "name": "3dblogpost",
+  "version": "0.1.0",
   "dependencies": {
     "matte": "~0.1.4",
     "collections": "~0.2.2",
