@@ -1,26 +1,28 @@
-.beachplanet {
-  font-family: sans-serif;
+.BeachPlanet {
+    display: -webkit-box;
+    display: -ms-flex;
+    display: flex;
+    height: 100%;
+    font-family: sans-serif;
 }
-.beachplanet .stage {
-  height: 600px !important;
+
+.BeachPlanet h1 {
+    color: #fff;
+    border: #000;
+    font-family: "Impact";
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px #000;
+    font-size: 60px;
 }
-.beachplanet h1 {
-  color: #fff;
-  border: #000;
-  font-family: "Impact";
-  font-weight: bold;
-  text-transform: uppercase;
-  -webkit-text-stroke: 3px #000;
-  font-size: 60px;
+.BeachPlanet #top {
+    position: fixed;
+    text-align: center;
+    width: 100%;
 }
-.beachplanet #top {
-  position: fixed;
-  text-align: center;
-  width: 100%;
-}
-.beachplanet #bottom {
-  position: fixed;
-  margin-top: 450px;
-  text-align: center;
-  width: 100%;
+.BeachPlanet #bottom {
+    position: fixed;
+    margin-top: 450px;
+    text-align: center;
+    width: 100%;
 }
