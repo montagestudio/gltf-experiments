@@ -6,23 +6,10 @@
     font-family: sans-serif;
 }
 
-.BeachPlanet h1 {
-    color: #fff;
-    border: #000;
-    font-family: "Impact";
-    font-weight: bold;
-    text-transform: uppercase;
-    -webkit-text-stroke: 3px #000;
-    font-size: 60px;
-}
-.BeachPlanet #top {
-    position: fixed;
-    text-align: center;
-    width: 100%;
-}
-.BeachPlanet #bottom {
-    position: fixed;
-    margin-top: 450px;
-    text-align: center;
-    width: 100%;
+.BeachPlanet-logo {
+    position: absolute;
+    top: 40px;
+    left: calc(50% - 75px);
+    margin: 0;
+    width: 150px;
 }
