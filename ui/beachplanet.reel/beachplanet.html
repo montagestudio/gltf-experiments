@@ -44,6 +44,38 @@
                     },
                     "viewPoint": { "@" : "cameraRideViewPoint" }
                 }
+            },
+            
+            "score": {
+                "prototype": "digit/ui/badge.reel",
+                "properties": {
+                    "element": { "#": "score" },
+                    "value": "3"
+                }
+            },
+            
+            "nav": {
+                "prototype": "montage/ui/repetition.reel",
+                "properties": {
+                    "element": { "#": "nav" },
+                    "content": [
+                        { "name": "Top", "value": "item1" },
+                        { "name": "Front", "value": "item2" },
+                        { "name": "Back", "value": "item3" },
+                        { "name": "Left", "value": "item4" },
+                        { "name": "Right", "value": "item5" }
+                    ]
+                }
+            },
+            
+            "navItem": {
+                "prototype": "digit/ui/button.reel",
+                "properties": {
+                    "element": { "#": "navItem" }
+                },
+                "bindings": {
+                    "label": { "<-": "@nav.objectAtCurrentIteration.name" }
+                }
             }
         }
     </script>
@@ -53,6 +85,18 @@
     <div data-montage-id="beachplanet" class="BeachPlanet">
         <img class="BeachPlanet-logo" src="logo.png" title="BeachPlanet">
         <div data-montage-id="viewer"></div>
+        <aside class="BeachPlanet-panel">
+            <div class="BeachPlanet-score">
+                <label class="BeachPlanet-score-label">Score</label>
+                <span data-montage-id="score" class="BeachPlanet-score-value"></span>
+            </div>
+            <div class="BeachPlanet-cams">
+                <label class="BeachPlanet-cams-label">Camera</label>
+                <nav data-montage-id="nav" class="BeachPlanet-nav">
+                    <button data-montage-id="navItem" class="BeachPlanet-nav-item"></button>
+                </nav>
+            </div>
+        </aside>
     </div>
 </body>
 

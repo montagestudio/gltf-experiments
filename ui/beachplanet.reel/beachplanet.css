@@ -3,7 +3,6 @@
     display: -ms-flex;
     display: flex;
     height: 100%;
-    font-family: sans-serif;
 }
 
 .BeachPlanet-logo {
@@ -12,4 +11,90 @@
     left: calc(50% - 75px);
     margin: 0;
     width: 150px;
+}
+
+
+/* Panel -------------------------------- */
+
+.BeachPlanet-panel {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -200px;
+    border-radius: 26px;
+    border: 2px solid hsla(0, 0%, 0%, 0.33);
+    color: hsla(0, 0%, 0%, 0.6);
+    text-shadow: 0 1px 0 hsla(0, 100%, 100%, 0.13);
+    box-shadow: inset 0 1px 4px hsla(0, 100%, 100%, 0.48);
+    background-color: hsl(29, 70%, 35%);
+    background-image: url(wood-pattern.png);
+    background-size: 100% auto;
+}
+
+
+/* Score -------------------------------- */
+
+.BeachPlanet-score {
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.BeachPlanet-score-label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.BeachPlanet-score-value.digit-Badge {
+    margin-bottom: 0;
+    padding: 8px 14px;
+    font-size: inherit;
+    line-height: 1;
+    color: inherit;
+    border-radius: 8px;
+    color: hsl(48, 100%, 67%);
+    text-shadow: 0 2px 2px hsla(0, 0%, 0%, 0.2);
+    border: 4px solid hsla(0, 0%, 0%, 0.13);
+    background-color: hsla(0, 0%, 0%, 0.1);
+}
+
+
+/* Camera -------------------------------- */
+
+.BeachPlanet-cams {
+    padding: 10px;
+    border-top: 1px solid hsla(0, 0%, 0%, 0.2);
+}
+
+.BeachPlanet-cams-label {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.BeachPlanet-nav-item.digit-Button {
+    display: block;
+    margin: 0 0 10px 0;
+    width: 100%;
+    font-family: inherit;
+    color: hsl(48, 100%, 67%);
+    text-shadow: 0 2px 2px hsla(0, 0%, 0%, 0.2);
+    border: 2px solid hsla(0, 74%, 20%, 0.34);
+    background: linear-gradient( hsla(0, 100%, 100%, 0.1), hsla(0, 100%, 100%, 0.05) );
+    background-clip: padding-box;
+}
+
+.BeachPlanet-nav-item.digit-Button:hover {
+    background-color: hsla(48, 100%, 67%, 0.1);
+}
+
+.BeachPlanet-nav-item.digit-Button:active,
+.BeachPlanet-nav-item.digit-Button.is-selected {
+    color: hsl(0, 0%, 31%);
+    text-shadow: 0 1px 0 hsla(0, 100%, 100%, 0.62);
+    background-color: hsl(48, 100%, 67%);
+}
+
+.BeachPlanet-nav-item:last-child {
+    margin: 0;
 }
