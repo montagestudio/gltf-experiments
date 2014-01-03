@@ -8,6 +8,13 @@ exports.BeachPlanet = Component.specialize({
 		value: function () {
 			this.templateObjects.viewer.play();
 		}
+	},
+
+	handleNavItemAction: { 
+		value: function(event) {
+			this.templateObjects.viewer.stop();
+			this.templateObjects.viewer.viewPoint = event.target.viewPoint;
+		}
 	}
 
 });
