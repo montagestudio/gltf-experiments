@@ -11,8 +11,15 @@
     left: calc(50% - 75px);
     margin: 0;
     width: 150px;
+    pointer-events: none;
+    -webkit-transform: translateZ(0px);
 }
 
+.BeachPlanet-playing {
+  transition-property: opacity;
+  transition-duration: 3s;
+  opacity: 0;
+}
 
 /* Panel -------------------------------- */
 
@@ -97,4 +104,21 @@
 
 .BeachPlanet-nav-item:last-child {
     margin: 0;
+}
+
+/* Game: CSS applied to 3D Content */
+
+.BeachPlanet-rock-reveal {
+  -webkit-transform: rotateZ(170deg) translate3d(0px, 0px, 0.8px) scale3d(1, 1, 1);
+}
+
+.BeachPlanet-rock-animate {
+  transition-property: -webkit-transform;
+  transition-duration: 3s;
+  -webkit-transform-origin: 50% 50%;
+}
+
+.BeachPlanet-rock-logo-reveal {
+   -webkit-transform: scale3d(5, 5, 5) translate3d(0px, 0px, 35px);
+   data-montage-transform-origin: 50% 50% 0%;
 }

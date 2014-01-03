@@ -50,7 +50,10 @@
                 "prototype": "digit/ui/badge.reel",
                 "properties": {
                     "element": { "#": "score" },
-                    "value": "3"
+                    "value": "0"
+                },
+                "bindings": {
+                    "value": { "<-": "@owner.score" }
                 }
             },
             
@@ -119,7 +122,53 @@
                     ]
                 }
             },
-            
+
+            "star": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node-game_starfish",
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+
+            "rock": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node_25",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('.BeachPlanet-rock-animate')": {
+                        "<-": "true"
+                    }
+                },
+                "listeners": [{
+                    "type": "hover",
+                    "listener": {
+                        "@": "owner"
+                    }
+                }]
+            },
+
+            "logoRock": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node_38",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('.BeachPlanet-rock-animate')": {
+                        "<-": "true"
+                    }
+                }
+            },
+
             "navItem": {
                 "prototype": "digit/ui/button.reel",
                 "properties": {
