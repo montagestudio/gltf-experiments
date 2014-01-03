@@ -1,3 +1,10 @@
+
+@-webkit-keyframes pop {
+      0% { -webkit-transform: scale(0); }
+     40% { -webkit-transform: scale(1.2); }
+    100% { -webkit-transform: scale(1); }
+}
+
 .BeachPlanet {
     display: -webkit-box;
     display: -ms-flex;
@@ -13,6 +20,7 @@
     width: 150px;
     pointer-events: none;
     -webkit-transform: translateZ(0px);
+    -webkit-animation: pop .4s cubic-bezier(.07, .45, .18, .94);
 }
 
 .BeachPlanet-playing {
@@ -36,6 +44,8 @@
     background-color: hsl(29, 70%, 35%);
     background-image: url(wood-pattern.png);
     background-size: 100% auto;
+    -webkit-animation: pop .4s .2s cubic-bezier(.07, .45, .18, .94);
+    -webkit-animation-fill-mode: backwards;
 }
 
 
