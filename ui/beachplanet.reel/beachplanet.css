@@ -12,16 +12,67 @@
     height: 100%;
 }
 
-.BeachPlanet-logo {
+
+/* Overlay ------------------------- */
+
+.BeachPlanet-overlay {
     position: absolute;
-    top: 40px;
-    left: calc(50% - 75px);
-    margin: 0;
-    width: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient( hsla(203, 100%, 91%, 1) 10%, hsla(203, 100%, 91%, 0) );
+}
+
+.isPlaying .BeachPlanet-overlay--intro {
+    visibility: hidden;
+    opacity: 0;
     pointer-events: none;
-    -webkit-transform: translateZ(0px);
+    -webkit-transition: opacity .2s ease-in, visibility 0 .2s;
+}
+
+.BeachPlanet-logo {
+    margin-bottom: 30px;
+    width: 214px;
     -webkit-animation: pop .4s cubic-bezier(.07, .45, .18, .94);
 }
+
+.BeachPlanet-button.digit-Button {
+    font-family: inherit;
+    font-size: 40px;
+    padding: 0.4em 0.8em;
+    height: auto;
+    color: hsl(48, 100%, 67%);
+    text-shadow: 0 2px 2px hsla(0, 0%, 0%, 0.2);
+    border: 2px solid hsla(0, 0%, 0%, 0.33);
+    border-radius: 100px;
+    box-shadow: inset 0 1px 4px hsla(0, 100%, 100%, 0.48);
+    background-color: hsl(29, 67%, 35%);
+    background-image: url(wood-pattern.png);
+    background-size: 100% auto;
+    -webkit-transition: -webkit-transform .2s;
+}
+
+.BeachPlanet-button.digit-Button:hover {
+    -webkit-transform: scale(1.1);
+}
+
+.BeachPlanet-button.digit-Button.montage--active {
+    -webkit-transform: scale(.9);
+    -webkit-transition-duration: .05s;
+}
+
+.BeachPlanet-button--play {
+    -webkit-animation: pop .4s .4s cubic-bezier(.07, .45, .18, .94);
+    -webkit-animation-fill-mode: backwards;
+}
+
+
+/* States -------------------------------- */
 
 .BeachPlanet-playing {
   transition-property: opacity;
@@ -32,21 +83,34 @@
 /* Panel -------------------------------- */
 
 .BeachPlanet-panel {
+    display: none;
     position: absolute;
     right: 40px;
     top: 50%;
-    margin-top: -200px;
+    margin-top: -250px;
     border-radius: 26px;
     border: 2px solid hsla(0, 0%, 0%, 0.33);
-    color: hsla(0, 0%, 0%, 0.6);
-    text-shadow: 0 1px 0 hsla(0, 100%, 100%, 0.13);
-    box-shadow: inset 0 1px 4px hsla(0, 100%, 100%, 0.48);
-    background-color: hsl(29, 70%, 35%);
-    background-image: url(wood-pattern.png);
+    color: hsla(0, 0%, 0%, 0.5);
+    text-shadow: 1px 2px 0 hsla(0, 100%, 100%, 0.13);
+    background-color: hsl(29, 55%, 56%);
+    background-image: url(wood-pattern-light.png);
     background-size: 100% auto;
-    -webkit-animation: pop .4s .2s cubic-bezier(.07, .45, .18, .94);
+    box-shadow: inset 2px 4px 0px hsla(0, 100%, 100%, 0.2), 6px 12px 0px hsla(0, 0%, 0%, 0.15);
+}
+
+.isPlaying .BeachPlanet-panel {
+    display: block;
+    -webkit-animation: pop .4s .4s cubic-bezier(.07, .45, .18, .94);
     -webkit-animation-fill-mode: backwards;
 }
+
+.BeachPlanet-panel-logo {
+    display: block;
+    width: 76px;
+    margin: 30px auto 0 auto;
+}
+
+
 
 
 /* Score -------------------------------- */
@@ -54,25 +118,28 @@
 .BeachPlanet-score {
     padding: 20px;
     font-size: 1.5em;
+    text-align: center;
+    border-bottom: 1px solid hsla(0,0%,0%,.2);
 }
 
 .BeachPlanet-score-label {
     display: block;
-    text-align: center;
     font-weight: bold;
+    margin-bottom: .2em;
 }
 
 .BeachPlanet-score-value.digit-Badge {
-    margin-bottom: 0;
+    margin: 0;
     padding: 8px 14px;
     font-size: inherit;
     line-height: 1;
     color: inherit;
     border-radius: 8px;
     color: hsl(48, 100%, 67%);
-    text-shadow: 0 2px 2px hsla(0, 0%, 0%, 0.2);
-    border: 4px solid hsla(0, 0%, 0%, 0.13);
-    background-color: hsla(0, 0%, 0%, 0.1);
+    text-shadow: 1px 2px 0 hsla(0, 0%, 0%, 0.2);
+    border: none;
+    background-color: hsla(29, 46%, 44%, 0.66);
+    box-shadow: inset 2px 4px 0 hsla(0,0%,0%, 0.15), 1px 2px 0 hsla(0,0%,100%, 0.1);
 }
 
 
@@ -80,7 +147,7 @@
 
 .BeachPlanet-cams {
     padding: 10px;
-    border-top: 1px solid hsla(0, 0%, 0%, 0.2);
+    border-top: 1px solid hsla(0, 0%, 100%, .2);
 }
 
 .BeachPlanet-cams-label {
@@ -95,28 +162,30 @@
     width: 100%;
     font-family: inherit;
     color: hsl(48, 100%, 67%);
-    text-shadow: 0 2px 2px hsla(0, 0%, 0%, 0.2);
-    border: 2px solid hsla(0, 74%, 20%, 0.34);
-    background: linear-gradient( hsla(0, 100%, 100%, 0.1), hsla(0, 100%, 100%, 0.05) );
-    background-clip: padding-box;
+    text-shadow: 1px 2px 0 hsla(0, 0%, 0%, 0.2);
+    border: none;
+    background: hsla(26, 50%, 46%, 0.65);
+    box-shadow: inset 1px 2px 0 hsla(36, 100%, 73%, 0.55), 1px 2px 0 hsla(31, 72%, 25%, 0.67);
 }
 
 .BeachPlanet-nav-item.digit-Button:hover {
-    background-color: hsla(48, 100%, 67%, 0.1);
+    background-color: hsla(26, 50%, 50%, 0.65);
 }
 
 .BeachPlanet-nav-item.digit-Button:active,
 .BeachPlanet-nav-item.digit-Button.is-selected {
     color: hsl(0, 0%, 31%);
-    text-shadow: 0 1px 0 hsla(0, 100%, 100%, 0.62);
+    text-shadow: 1px 2px 0 hsla(0, 100%, 100%, 0.62);
     background-color: hsl(48, 100%, 67%);
+    box-shadow: inset 1px 2px 0 hsla(36, 62%, 20%, 0.69);
 }
 
 .BeachPlanet-nav-item:last-child {
     margin: 0;
 }
 
-/* Game: CSS applied to 3D Content */
+
+/* Game: CSS applied to 3D Content ------------------------- */
 
 .BeachPlanet-rock-reveal {
   -webkit-transform: translate3d(0px, 0px, 0.8px);

@@ -13,7 +13,14 @@ exports.BeachPlanet = Component.specialize({
 			this.templateObjects.viewer.play();
 		}
 	},
-
+    
+    handlePlayButtonAction: { 
+    	value: function(event) {
+    		this.classList.remove("isIntro");
+    		this.classList.add("isPlaying");
+    	}
+    },
+    
 	handleNavItemAction: { 
 		value: function(event) {
 			this.playing = true;

@@ -215,16 +215,29 @@
                         "@": "owner"
                     }
                 }]
+            },
+            
+            "playButton": {
+                "prototype": "digit/ui/button.reel",
+                "properties": {
+                    "element": { "#": "playButton" }
+                },
+                "listeners": [{
+                    "type": "action",
+                    "listener": {
+                        "@": "owner"
+                    }
+                }]
             }
         }
     </script>
 </head>
 
 <body>
-    <div data-montage-id="beachplanet" class="BeachPlanet">
-        <img class="BeachPlanet-logo" src="logo.png" title="BeachPlanet">
+    <div data-montage-id="beachplanet" class="BeachPlanet isIntro">
         <div data-montage-id="viewer"></div>
         <aside class="BeachPlanet-panel">
+            <img class="BeachPlanet-panel-logo" src="logo.png" title="BeachPlanet">
             <div class="BeachPlanet-score">
                 <label class="BeachPlanet-score-label">Score</label>
                 <span data-montage-id="score" class="BeachPlanet-score-value"></span>
@@ -236,6 +249,10 @@
                 </nav>
             </div>
         </aside>
+        <div class="BeachPlanet-overlay BeachPlanet-overlay--intro">
+            <img class="BeachPlanet-logo" src="logo.png" title="BeachPlanet">
+            <button data-montage-id="playButton" class="BeachPlanet-button BeachPlanet-button--play">Play</button>
+        </div>
     </div>
 </body>
 
