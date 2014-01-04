@@ -147,11 +147,16 @@
                     }
                 },
                 "listeners": [{
+                    "type": "action",
+                    "listener": {
+                        "@": "owner"
+                    }},
+                    {
                     "type": "hover",
                     "listener": {
                         "@": "owner"
-                    }
-                }]
+                    }}                    
+                ]
             },
 
             "logoRock": {
@@ -167,6 +172,32 @@
                         "<-": "true"
                     }
                 }
+            },
+
+            "door": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node_6",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('.BeachPlanet-door-animate')": {
+                        "<-": "true"
+                    }
+                },
+                "listeners": [{
+                    "type": "action",
+                    "listener": {
+                        "@": "owner"
+                    }},
+                    {
+                    "type": "hover",
+                    "listener": {
+                        "@": "owner"
+                    }}                    
+                ]
             },
 
             "navItem": {

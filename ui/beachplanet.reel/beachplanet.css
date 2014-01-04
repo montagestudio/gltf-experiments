@@ -119,7 +119,7 @@
 /* Game: CSS applied to 3D Content */
 
 .BeachPlanet-rock-reveal {
-  -webkit-transform: rotateZ(170deg) translate3d(0px, 0px, 0.8px) scale3d(1, 1, 1);
+  -webkit-transform: translate3d(0px, 0px, 0.8px);
 }
 
 .BeachPlanet-rock-animate {
@@ -129,6 +129,16 @@
 }
 
 .BeachPlanet-rock-logo-reveal {
-   -webkit-transform: scale3d(5, 5, 5) translate3d(0px, 0px, 35px);
-   data-montage-transform-origin: 50% 50% 0%;
+   -webkit-transform: rotateZ(10deg) scale3d(5, 5, 5) translate3d(0px, 0px, 35px);
 }
+
+.BeachPlanet-door-animate {
+  transition-property: -webkit-transform;
+  transition-duration: 3s;
+  -webkit-transform-origin: 50% 0%;
+}
+
+.BeachPlanet-door-open {
+  -webkit-transform: rotateZ(-130deg);
+}
+

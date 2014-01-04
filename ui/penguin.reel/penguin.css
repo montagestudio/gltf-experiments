@@ -9,7 +9,6 @@
 }
 
 .animate {
-  -webkit-transform-origin: 0% 50%;
   transition-property: -webkit-transform;
   transition-duration: 3s;
 }
