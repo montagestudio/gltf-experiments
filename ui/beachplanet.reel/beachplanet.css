@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: radial-gradient( hsla(203, 100%, 91%, 1) 10%, hsla(203, 100%, 91%, 0) );
+    background: radial-gradient( hsl(203, 100%, 91%), hsla(203, 100%, 91%, 0) 50% );
 }
 
 .isPlaying .BeachPlanet-overlay--intro {
@@ -43,13 +43,13 @@
 
 .BeachPlanet-button.digit-Button {
     font-family: inherit;
-    font-size: 40px;
+    font-size: 30px;
     padding: 0.4em 0.8em;
     height: auto;
     color: hsl(48, 100%, 67%);
     text-shadow: 0 2px 2px hsla(0, 0%, 0%, 0.2);
     border: 2px solid hsla(0, 0%, 0%, 0.33);
-    border-radius: 100px;
+    border-radius: 16px;
     box-shadow: inset 0 1px 4px hsla(0, 100%, 100%, 0.48);
     background-color: hsl(29, 67%, 35%);
     background-image: url(wood-pattern.png);
