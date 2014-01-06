@@ -13,6 +13,38 @@
 }
 
 
+/* States -------------------------------- */
+
+.BeachPlanet-playing {
+  transition-property: opacity;
+  transition-duration: 3s;
+  opacity: 0;
+}
+
+.isIntro .BeachPlanet-overlay--intro,
+.isWinner .BeachPlanet-overlay--winner {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transition: none;
+}
+
+.isWinner .BeachPlanet-overlay--intro {
+    -webkit-transition: none; /* Disable transition for the intro */
+}
+
+.isIntro .BeachPlanet-overlay--intro .BeachPlanet-logo,
+.isWinner .BeachPlanet-overlay--winner .BeachPlanet-logo {
+    -webkit-animation: pop .4s cubic-bezier(.07, .45, .18, .94);
+}
+
+.isIntro .BeachPlanet-overlay--intro .BeachPlanet-button--play,
+.isWinner .BeachPlanet-overlay--winner .BeachPlanet-button--play {
+    -webkit-animation: pop .4s .4s cubic-bezier(.07, .45, .18, .94);
+    -webkit-animation-fill-mode: backwards;
+}
+
+
 /* Overlay ------------------------- */
 
 .BeachPlanet-overlay {
@@ -26,9 +58,6 @@
     justify-content: center;
     align-items: center;
     background: radial-gradient( hsl(203, 100%, 91%), hsla(203, 100%, 91%, 0) 50% );
-}
-
-.isPlaying .BeachPlanet-overlay--intro {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -38,7 +67,6 @@
 .BeachPlanet-logo {
     margin-bottom: 30px;
     width: 214px;
-    -webkit-animation: pop .4s cubic-bezier(.07, .45, .18, .94);
 }
 
 .BeachPlanet-button.digit-Button {
@@ -66,19 +94,6 @@
     -webkit-transition-duration: .05s;
 }
 
-.BeachPlanet-button--play {
-    -webkit-animation: pop .4s .4s cubic-bezier(.07, .45, .18, .94);
-    -webkit-animation-fill-mode: backwards;
-}
-
-
-/* States -------------------------------- */
-
-.BeachPlanet-playing {
-  transition-property: opacity;
-  transition-duration: 3s;
-  opacity: 0;
-}
 
 /* Panel -------------------------------- */
 
@@ -183,6 +198,8 @@
 .BeachPlanet-nav-item:last-child {
     margin: 0;
 }
+
+
 
 
 /* Game: CSS applied to 3D Content ------------------------- */

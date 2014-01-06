@@ -228,6 +228,19 @@
                         "@": "owner"
                     }
                 }]
+            },
+            
+            "playAgainButton": {
+                "prototype": "digit/ui/button.reel",
+                "properties": {
+                    "element": { "#": "playAgainButton" }
+                },
+                "listeners": [{
+                    "type": "action",
+                    "listener": {
+                        "@": "owner"
+                    }
+                }]
             }
         }
     </script>
@@ -252,6 +265,10 @@
         <div class="BeachPlanet-overlay BeachPlanet-overlay--intro">
             <img class="BeachPlanet-logo" src="logo.png" title="BeachPlanet">
             <button data-montage-id="playButton" class="BeachPlanet-button BeachPlanet-button--play">Play</button>
+        </div>
+        <div class="BeachPlanet-overlay BeachPlanet-overlay--winner">
+            <img class="BeachPlanet-logo" src="winner.png" title="You won!">
+            <button data-montage-id="playAgainButton" class="BeachPlanet-button BeachPlanet-button--play">Play again</button>
         </div>
     </div>
 </body>

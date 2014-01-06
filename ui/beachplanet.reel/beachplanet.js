@@ -21,6 +21,14 @@ exports.BeachPlanet = Component.specialize({
     	}
     },
     
+    handlePlayAgainButtonAction: { 
+    	value: function(event) {
+            console.log("again");
+    		this.classList.remove("isWinner");
+    		this.classList.add("isPlaying");
+    	}
+    },
+    
 	handleNavItemAction: { 
 		value: function(event) {
 			this.playing = true;
