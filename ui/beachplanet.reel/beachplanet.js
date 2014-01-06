@@ -9,6 +9,10 @@ exports.BeachPlanet = Component.specialize({
 	templateDidLoad: {
 		value: function () {
 			this.templateObjects.viewer.play();
+
+			var music = new Audio("sound/WhiteSands.mp3");
+			music.load();
+			music.play();
 		}
 	},
 
@@ -70,7 +74,12 @@ exports.BeachPlanet = Component.specialize({
 				setTimeout(function() {
 					self.gameWon();
 				}, 3000)
+
     		}
+
+			var clickSound = new Audio("sound/getruby.mp3");
+			clickSound.load();
+			clickSound.play();
 		}
 	},
 
@@ -81,10 +90,8 @@ exports.BeachPlanet = Component.specialize({
 			return this._score;
 		},
 		set: function(value) {
-			if (value != this._score) {
-				this._score = value;
-				this.scoreDidChange();
-			}
+			this._score = value;
+			this.scoreDidChange();
 		}
 	},
 
