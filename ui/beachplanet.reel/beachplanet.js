@@ -6,11 +6,19 @@ exports.BeachPlanet = Component.specialize({
 
 	playing: { value: false },
 
-	score: { value: 0 },
-
 	templateDidLoad: {
 		value: function () {
 			this.templateObjects.viewer.play();
+		}
+	},
+
+	prepareForPlay: {
+		value:function() {
+			this.score = 0;
+			this.templateObjects.viewer.stop();
+			this.templateObjects.viewer.viewPoint = this.templateObjects.cameraRideViewPoint;
+
+			this.playing = true;
 		}
 	},
     
@@ -18,22 +26,65 @@ exports.BeachPlanet = Component.specialize({
     	value: function(event) {
     		this.classList.remove("isIntro");
     		this.classList.add("isPlaying");
+    		this.prepareForPlay();
     	}
     },
     
     handlePlayAgainButtonAction: { 
     	value: function(event) {
-            console.log("again");
     		this.classList.remove("isWinner");
     		this.classList.add("isPlaying");
+    		this.prepareForPlay();
     	}
     },
     
 	handleNavItemAction: { 
 		value: function(event) {
-			this.playing = true;
 			this.templateObjects.viewer.stop();
 			this.templateObjects.viewer.viewPoint = event.target.viewPoint;
+		}
+	},
+
+	gameWon: {
+		value: function() {
+    		//update title		
+    		this.classList.add("isWinner");
+    		this.classList.remove("isPlaying");
+
+			this.templateObjects.viewer.viewPoint = this.templateObjects.cameraRideViewPoint;
+			this.templateObjects.viewer.play();  
+
+	   		this.templateObjects.logoRock.classList.remove(".BeachPlanet-rock-logo-reveal");
+	   		this.templateObjects.rock.classList.remove(".BeachPlanet-rock-reveal");
+	   		this.templateObjects.door.classList.remove(".BeachPlanet-door-open");
+	   		this.templateObjects.star.classList.remove(".BeachPlanet-star-reveal");
+	   		this.templateObjects.logoStar.classList.remove(".BeachPlanet-star-logo-reveal");
+
+    	}
+	},
+
+	scoreDidChange: {
+		value: function() {
+			if (this.score === 3) {
+				var self = this;
+				setTimeout(function() {
+					self.gameWon();
+				}, 3000)
+    		}
+		}
+	},
+
+	_score: { value: 0 },
+
+	score: {
+		get: function() {
+			return this._score;
+		},
+		set: function(value) {
+			if (value != this._score) {
+				this._score = value;
+				this.scoreDidChange();
+			}
 		}
 	},
 
@@ -63,7 +114,6 @@ exports.BeachPlanet = Component.specialize({
     	value: function(event) {
     		if (this.playing && !this.templateObjects.door.classList.has(".BeachPlanet-door-open")) {
 	   			this.templateObjects.viewer.viewPoint = this.templateObjects.cabinVP;
-	   			console.log("handleDoorAction");
 	   			this.templateObjects.door.classList.add(".BeachPlanet-door-open");
 	   			this.score++;
     		} 
@@ -72,11 +122,32 @@ exports.BeachPlanet = Component.specialize({
 
 	handleDoorHover: {
 		value: function(event) {
-        	if (this.playing && !this.templateObjects.rock.classList.has(".BeachPlanet-door-open")) {
+        	if (this.playing && !this.templateObjects.door.classList.has(".BeachPlanet-door-open")) {
+				this.templateObjects.viewer.element.style.cursor="pointer";   			
+	    	}
+		}
+	},
+
+	/* handle star */
+
+  	handleStarAction: {
+    	value: function(event) {
+    		if (this.playing && !this.templateObjects.star.classList.has(".BeachPlanet-star-reveal")) {
+	   			this.templateObjects.star.classList.add(".BeachPlanet-star-reveal");
+	   			this.templateObjects.logoStar.classList.add(".BeachPlanet-star-logo-reveal");
+	   			this.score++;
+    		} 
+    	}
+    },
+
+	handleStarHover: {
+		value: function(event) {
+        	if (this.playing && !this.templateObjects.star.classList.has(".BeachPlanet-star-reveal")) {
 				this.templateObjects.viewer.element.style.cursor="pointer";   			
 	    	}
 		}
 	}
+
 
 
 });

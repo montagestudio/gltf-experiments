@@ -215,7 +215,7 @@
 }
 
 .BeachPlanet-rock-logo-reveal {
-   -webkit-transform: rotateZ(10deg) scale3d(5, 5, 5) translate3d(0px, 0px, 35px);
+   -webkit-transform: scale3d(5, 5, 5) translate3d(0px, 0px, 35px);
 }
 
 .BeachPlanet-door-animate {
@@ -226,5 +226,26 @@
 
 .BeachPlanet-door-open {
   -webkit-transform: rotateZ(-130deg);
+}
+
+.BeachPlanet-star-animate {
+  transition-property: -webkit-transform;
+  transition-duration: 2s;
+  -webkit-transform-origin: 50% 50%;
+}
+
+.BeachPlanet-star-logo-animate {
+  transition-property: -webkit-transform;
+  transition-duration: 3s;
+  -webkit-transform-origin: 50% 50%;
+}
+
+
+.BeachPlanet-star-reveal {
+   -webkit-transform: translate3d(-1.6px, 0px, -0.2px);
+}
+
+.BeachPlanet-star-logo-reveal {
+   -webkit-transform: scale3d(15, 15, 15) translate3d(0px, 0px, 35px);
 }
 

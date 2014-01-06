@@ -123,14 +123,45 @@
                 }
             },
 
-            "star": {
+            "logoStar": {
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
-                    "id": "node-game_starfish",
+                    "id": "node_36",
                     "scene": {
                         "@": "scene"
                     }
+                },
+                "bindings": {
+                    "classList.has('.BeachPlanet-star-logo-animate')": {
+                        "<-": "true"
+                    }
                 }
+            },
+
+            "star": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node_23",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('.BeachPlanet-star-animate')": {
+                        "<-": "true"
+                    }
+                },
+                "listeners": [{
+                    "type": "action",
+                    "listener": {
+                        "@": "owner"
+                    }},
+                    {
+                    "type": "hover",
+                    "listener": {
+                        "@": "owner"
+                    }}                    
+                ]
             },
 
             "rock": {
