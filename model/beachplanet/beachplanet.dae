@@ -5,8 +5,8 @@
       <author>fabrice</author>
       <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.4.1;  Revision: exported;  Platform: Win32;  Configuration: Release_Max2012_static</authoring_tool>
     </contributor>
-    <created>2014-01-06T17:04:42</created>
-    <modified>2014-01-06T17:04:42</modified>
+    <created>2014-01-07T09:57:32</created>
+    <modified>2014-01-07T09:57:32</modified>
     <unit name="inch" meter="0.0254"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -3279,7 +3279,7 @@ MapChannel:1 = -none-
         </extra>
       </node>
       <node id="node-Camera-planet" name="Camera-planet">
-        <matrix>0.613282 -0.2123284 0.7607903 630.2599 0.7898499 0.1706265 -0.5890872 -451.0596 -0.004731059 0.9621866 0.2723497 169.349 0 0 0 1</matrix>
+        <matrix>0.613282 -0.2123284 0.7607903 600 0.7898499 0.1706265 -0.5890872 -410 -0.004731059 0.9621866 0.2723497 169.349 0 0 0 1</matrix>
         <instance_camera url="#Camera-planet-camera"/>
         <extra>
           <technique profile="OpenCOLLADA">
@@ -3307,7 +3307,7 @@ MapChannel:1 = -none-
         </extra>
       </node>
       <node id="node-Camera-rock-logo" name="Camera-rock-logo">
-        <matrix>0.9936267 0.01855558 -0.1111836 240 -0.1127213 0.1635655 -0.9800715 110 0 0.9863579 0.1646147 30 0 0 0 1</matrix>
+        <matrix>0.7572022 -0.1192887 0.6421955 315.754 0.6531805 0.1382859 -0.7444677 153.9887 0 0.9831822 0.1826274 30 0 0 0 1</matrix>
         <instance_camera url="#Camera-rock-logo-camera"/>
         <extra>
           <technique profile="OpenCOLLADA">
@@ -3319,7 +3319,7 @@ MapChannel:1 = -none-
         </extra>
       </node>
       <node id="node-Camera-rock-logo.Target" name="Camera-rock-logo.Target">
-        <matrix>1 0 0 249.1777 0 1 0 190.9004 0 0 1 16.41182 0 0 0 1</matrix>
+        <matrix>1 0 0 267.9722 0 1 0 209.3799 0 0 1 16.41182 0 0 0 1</matrix>
         <extra>
           <technique profile="OpenCOLLADA">
             <cast_shadows>1</cast_shadows>
@@ -3330,7 +3330,7 @@ MapChannel:1 = -none-
         </extra>
       </node>
       <node id="node-Camera-star-logo" name="Camera-star-logo">
-        <matrix>1 0 0 286 0 0 -1 60 0 1 0 0 0 0 0 1</matrix>
+        <matrix>1 0 0 286 0 0.05547002 -0.9984604 20 0 0.9984604 0.05547002 10 0 0 0 1</matrix>
         <instance_camera url="#Camera-star-logo-camera"/>
         <extra>
           <technique profile="OpenCOLLADA">
@@ -3342,7 +3342,7 @@ MapChannel:1 = -none-
         </extra>
       </node>
       <node id="node-Camera-star-logo.Target" name="Camera-star-logo.Target">
-        <matrix>1 0 0 286 0 1 0 111 0 0 1 0 0 0 0 1</matrix>
+        <matrix>1 0 0 286 0 1 0 200 0 0 1 0 0 0 0 1</matrix>
         <extra>
           <technique profile="OpenCOLLADA">
             <cast_shadows>1</cast_shadows>
