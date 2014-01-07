@@ -3950,7 +3950,7 @@
                             "dfactor": 771,
                             "sfactor": 1
                         },
-                        "cullFaceEnable": 1,
+                        "cullFaceEnable": 0,
                         "depthMask": 1,
                         "depthTestEnable": 1
                     }
