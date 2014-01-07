@@ -45,6 +45,14 @@
 }
 
 
+
+/* View ------------------------- */
+
+.BeachPlanet .View-canvas {
+    display: block; /* Fix for Safari -> removes bottom gap */
+}
+
+
 /* Overlay ------------------------- */
 
 .BeachPlanet-overlay {
@@ -53,10 +61,16 @@
     left: 0;
     right: 0;
     bottom: 0;
+    
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-box-orient: vertical;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     background: radial-gradient( hsl(203, 100%, 91%), hsla(203, 100%, 91%, 0) 50% );
     visibility: hidden;
     opacity: 0;
@@ -70,6 +84,7 @@
 }
 
 .BeachPlanet-button.digit-Button {
+    display: block;
     font-family: inherit;
     font-size: 30px;
     padding: 0.4em 0.8em;
