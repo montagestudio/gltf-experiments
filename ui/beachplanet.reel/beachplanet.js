@@ -61,6 +61,7 @@ exports.BeachPlanet = Component.specialize({
 
 	gameWon: {
 		value: function() {
+			this.playSound("sound/completed.wav");
     		//update title		
     		this.classList.add("isWinner");
     		this.classList.remove("isPlaying");
