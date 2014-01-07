@@ -6,13 +6,23 @@ exports.BeachPlanet = Component.specialize({
 
 	playing: { value: false },
 
+	playSound: {
+		value: function(url, loops) {
+			var music = new Audio(url);
+          	music.preload = "auto";
+          	if (loops === true) {
+	         	music.loop = "loop";
+	       	}
+            music.addEventListener('canplaythrough', function () {
+				music.play();
+            }, false);
+		}
+	},
+
 	templateDidLoad: {
 		value: function () {
 			this.templateObjects.viewer.play();
-
-			var music = new Audio("sound/WhiteSands.mp3");
-			music.load();
-			music.play();
+			this.playSound("sound/WhiteSands.mp3", true);
 		}
 	},
 
@@ -20,7 +30,7 @@ exports.BeachPlanet = Component.specialize({
 		value:function() {
 			this.score = 0;
 			this.templateObjects.viewer.stop();
-			this.templateObjects.viewer.viewPoint = this.templateObjects.cameraRideViewPoint;
+			this.templateObjects.viewer.viewPoint = this.templateObjects.planetVP;
 
 			this.playing = true;
 		}
@@ -77,9 +87,7 @@ exports.BeachPlanet = Component.specialize({
 
     		}
 
-			var clickSound = new Audio("sound/getruby.mp3");
-			clickSound.load();
-			clickSound.play();
+    		this.playSound("sound/getruby.mp3");
 		}
 	},
 
@@ -101,6 +109,7 @@ exports.BeachPlanet = Component.specialize({
 		value: function(event) {
 	    	if (this.playing && !this.templateObjects.rock.classList.has(".BeachPlanet-rock-reveal")) {
 	   			this.templateObjects.rock.classList.add(".BeachPlanet-rock-reveal");
+	   			this.templateObjects.viewer.viewPoint = this.templateObjects.rockLogoVP;
 	   			this.templateObjects.logoRock.classList.add(".BeachPlanet-rock-logo-reveal");
 	   			this.score++;
 			}
@@ -120,7 +129,7 @@ exports.BeachPlanet = Component.specialize({
   	handleDoorAction: {
     	value: function(event) {
     		if (this.playing && !this.templateObjects.door.classList.has(".BeachPlanet-door-open")) {
-	   			this.templateObjects.viewer.viewPoint = this.templateObjects.cabinVP;
+	   			this.templateObjects.viewer.viewPoint = this.templateObjects.cabinLogoVP;
 	   			this.templateObjects.door.classList.add(".BeachPlanet-door-open");
 	   			this.score++;
     		} 
@@ -140,6 +149,7 @@ exports.BeachPlanet = Component.specialize({
   	handleStarAction: {
     	value: function(event) {
     		if (this.playing && !this.templateObjects.star.classList.has(".BeachPlanet-star-reveal")) {
+	   			this.templateObjects.viewer.viewPoint = this.templateObjects.starLogoVP;
 	   			this.templateObjects.star.classList.add(".BeachPlanet-star-reveal");
 	   			this.templateObjects.logoStar.classList.add(".BeachPlanet-star-logo-reveal");
 	   			this.score++;

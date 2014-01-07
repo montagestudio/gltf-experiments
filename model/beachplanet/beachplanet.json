@@ -1455,31 +1455,31 @@
         "extras": {
             "premultipliedAlpha": true
         },
-        "generator": "collada2gltf@042d7d2a3782aaf6d86961d052fc53bea8b3e424"
+        "generator": "collada2gltf@e7a52774d9c9cd485f4c19d85be9187e6dc842a2"
     },
     "bufferViews": {
         "bufferView_705": {
-            "buffer": "beachplanet",
+            "buffer": "beachPlanet",
             "byteLength": 1807584,
             "byteOffset": 0,
             "target": 34962
         },
         "bufferView_706": {
-            "buffer": "beachplanet",
+            "buffer": "beachPlanet",
             "byteLength": 112976,
             "byteOffset": 1807584,
             "target": 34963
         },
         "bufferView_707": {
-            "buffer": "beachplanet",
+            "buffer": "beachPlanet",
             "byteLength": 22044,
             "byteOffset": 1920560
         }
     },
     "buffers": {
-        "beachplanet": {
+        "beachPlanet": {
             "byteLength": 1942604,
-            "path": "beachplanet.bin",
+            "path": "beachPlanet.bin",
             "type": "arraybuffer"
         }
     },
@@ -1487,7 +1487,7 @@
         "camera_0": {
             "perspective": {
                 "xfov": 65.4705,
-                "zfar": 2000,
+                "zfar": 4000,
                 "znear": 1
             },
             "type": "perspective"
@@ -1495,7 +1495,7 @@
         "camera_1": {
             "perspective": {
                 "xfov": 65.4705,
-                "zfar": 2000,
+                "zfar": 4000,
                 "znear": 1
             },
             "type": "perspective"
@@ -1503,15 +1503,15 @@
         "camera_2": {
             "perspective": {
                 "xfov": 65.4705,
-                "zfar": 2000,
-                "znear": 1
+                "zfar": 39370.1,
+                "znear": 0.03937
             },
             "type": "perspective"
         },
         "camera_3": {
             "perspective": {
                 "xfov": 65.4705,
-                "zfar": 2000,
+                "zfar": 4000,
                 "znear": 1
             },
             "type": "perspective"
@@ -1519,7 +1519,7 @@
         "camera_4": {
             "perspective": {
                 "xfov": 65.4705,
-                "zfar": 2000,
+                "zfar": 4000,
                 "znear": 1
             },
             "type": "perspective"
@@ -1527,7 +1527,39 @@
         "camera_5": {
             "perspective": {
                 "xfov": 65.4705,
-                "zfar": 2000,
+                "zfar": 39370.1,
+                "znear": 0.03937
+            },
+            "type": "perspective"
+        },
+        "camera_6": {
+            "perspective": {
+                "xfov": 65.4705,
+                "zfar": 4000,
+                "znear": 1
+            },
+            "type": "perspective"
+        },
+        "camera_7": {
+            "perspective": {
+                "xfov": 65.4705,
+                "zfar": 4000,
+                "znear": 1
+            },
+            "type": "perspective"
+        },
+        "camera_8": {
+            "perspective": {
+                "xfov": 65.4705,
+                "zfar": 4000,
+                "znear": 1
+            },
+            "type": "perspective"
+        },
+        "camera_9": {
+            "perspective": {
+                "xfov": 45,
+                "zfar": 1000,
                 "znear": 1
             },
             "type": "perspective"
@@ -2393,6 +2425,142 @@
             ],
             "name": "CabineDoor"
         },
+        "node-Camera-cabin-logo": {
+            "camera": "camera_7",
+            "children": [],
+            "matrix": [
+                -0.0749764,
+                0.997185,
+                0,
+                0,
+                0.00522131,
+                0.00039258,
+                0.999986,
+                0,
+                0.997172,
+                0.0749754,
+                -0.00523605,
+                0,
+                145,
+                -30.01,
+                50.79,
+                1
+            ],
+            "name": "Camera-cabin-logo"
+        },
+        "node-Camera-planet": {
+            "camera": "camera_6",
+            "children": [],
+            "matrix": [
+                0.613282,
+                0.78985,
+                -0.00473106,
+                0,
+                -0.212328,
+                0.170627,
+                0.962187,
+                0,
+                0.76079,
+                -0.589087,
+                0.27235,
+                0,
+                630.26,
+                -451.06,
+                169.349,
+                1
+            ],
+            "name": "Camera-planet"
+        },
+        "node-Camera-rock-logo": {
+            "camera": "camera_8",
+            "children": [],
+            "matrix": [
+                0.993627,
+                -0.112721,
+                0,
+                0,
+                0.0185556,
+                0.163566,
+                0.986358,
+                0,
+                -0.111184,
+                -0.980071,
+                0.164615,
+                0,
+                240,
+                110,
+                30,
+                1
+            ],
+            "name": "Camera-rock-logo"
+        },
+        "node-Camera-rock-logo.Target": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                249.178,
+                190.9,
+                16.4118,
+                1
+            ],
+            "name": "Camera-rock-logo.Target"
+        },
+        "node-Camera-star-logo": {
+            "camera": "camera_9",
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                286,
+                60,
+                0,
+                1
+            ],
+            "name": "Camera-star-logo"
+        },
+        "node-Camera-star-logo.Target": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                286,
+                111,
+                0,
+                1
+            ],
+            "name": "Camera-star-logo.Target"
+        },
         "node-Camera_SeaGull": {
             "camera": "camera_4",
             "children": [],
@@ -2701,21 +2869,21 @@
                 "node-logo_montage_dolphin"
             ],
             "matrix": [
-                12.9466,
-                -24.9314,
-                0.0518676,
+                -2.14245,
+                -27.4729,
+                5.46268,
                 0,
-                10.3831,
-                5.44497,
-                25.5291,
+                16.9205,
+                -5.63544,
+                -21.7056,
                 0,
-                -22.6664,
-                -11.7461,
-                11.7241,
+                22.3226,
+                1.63488,
+                16.977,
                 0,
-                225.717,
+                190.522,
                 -161.731,
-                -66.2029,
+                -69.1155,
                 1
             ],
             "name": "dauphin001"
@@ -2725,17 +2893,17 @@
                 "node_20"
             ],
             "matrix": [
-                9.25342,
+                -8.4029,
                 -17.8193,
-                0.0370716,
+                3.87536,
                 0,
-                -1.21432,
+                -7.36212,
                 -0.588909,
-                20.0333,
+                -18.671,
                 0,
-                -17.778,
-                -9.23473,
-                -1.34908,
+                16.6837,
+                -9.23474,
+                -6.28722,
                 0,
                 170.506,
                 -136.654,
@@ -3026,16 +3194,16 @@
                 -0.00791848,
                 0,
                 -0.0104997,
-                0.00048665,
+                0.000486651,
                 -0.000977934,
                 0,
                 0.00101062,
                 0.00791438,
                 -0.00691224,
                 0,
-                -0.000123024,
-                -0.000690222,
-                7.15256e-06,
+                -0.000121593,
+                -0.00069046,
+                6.67572e-06,
                 1
             ],
             "name": "logo_montage_dolphin"
@@ -3519,8 +3687,8 @@
                 "a_position",
                 "a_texcoord0"
             ],
-            "fragmentShader": "beachplanet0FS",
-            "vertexShader": "beachplanet0VS"
+            "fragmentShader": "beachPlanet0FS",
+            "vertexShader": "beachPlanet0VS"
         },
         "program_1": {
             "attributes": [
@@ -3528,8 +3696,8 @@
                 "a_position",
                 "a_texcoord0"
             ],
-            "fragmentShader": "beachplanet2FS",
-            "vertexShader": "beachplanet2VS"
+            "fragmentShader": "beachPlanet2FS",
+            "vertexShader": "beachPlanet2VS"
         }
     },
     "samplers": {
@@ -3576,22 +3744,28 @@
                 "node-Camera_SeaGull",
                 "node-Circle001",
                 "node-Camera_ride",
-                "node-Camera_ride.Target"
+                "node-Camera_ride.Target",
+                "node-Camera-planet",
+                "node-Camera-cabin-logo",
+                "node-Camera-rock-logo",
+                "node-Camera-rock-logo.Target",
+                "node-Camera-star-logo",
+                "node-Camera-star-logo.Target"
             ]
         }
     },
     "shaders": {
-        "beachplanet0FS": {
-            "path": "beachplanet0FS.glsl"
+        "beachPlanet0FS": {
+            "path": "beachPlanet0FS.glsl"
         },
-        "beachplanet0VS": {
-            "path": "beachplanet0VS.glsl"
+        "beachPlanet0VS": {
+            "path": "beachPlanet0VS.glsl"
         },
-        "beachplanet2FS": {
-            "path": "beachplanet2FS.glsl"
+        "beachPlanet2FS": {
+            "path": "beachPlanet2FS.glsl"
         },
-        "beachplanet2VS": {
-            "path": "beachplanet2VS.glsl"
+        "beachPlanet2VS": {
+            "path": "beachPlanet2VS.glsl"
         }
     },
     "skins": {},
@@ -3776,7 +3950,7 @@
                             "dfactor": 771,
                             "sfactor": 1
                         },
-                        "cullFaceEnable": 0,
+                        "cullFaceEnable": 1,
                         "depthMask": 1,
                         "depthTestEnable": 1
                     }

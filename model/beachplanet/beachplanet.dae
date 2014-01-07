@@ -5,8 +5,8 @@
       <author>fabrice</author>
       <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.4.1;  Revision: exported;  Platform: Win32;  Configuration: Release_Max2012_static</authoring_tool>
     </contributor>
-    <created>2013-12-27T11:05:41</created>
-    <modified>2013-12-27T11:05:41</modified>
+    <created>2014-01-06T17:04:42</created>
+    <modified>2014-01-06T17:04:42</modified>
     <unit name="inch" meter="0.0254"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -1082,15 +1082,65 @@
         </technique>
       </extra>
     </effect>
-    <effect id="ColorEffectR143G224B87">
+    <effect id="ColorEffectR88G143B225">
       <profile_COMMON>
         <technique sid="common">
           <phong>
             <ambient>
-              <color>0.5607843 0.8784314 0.3411765 1</color>
+              <color>0.345098 0.5607843 0.8823529 1</color>
             </ambient>
             <diffuse>
-              <color>0.5607843 0.8784314 0.3411765 1</color>
+              <color>0.345098 0.5607843 0.8823529 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent>
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="ColorEffectR87G120B204">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>0.3411765 0.4705882 0.8 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.3411765 0.4705882 0.8 1</color>
             </diffuse>
             <specular>
               <color>1 1 1 1</color>
@@ -1134,8 +1184,11 @@
     </effect>
   </library_effects>
   <library_materials>
-    <material id="ColorEffectR143G224B87-material" name="ColorEffectR143G224B87-material">
-      <instance_effect url="#ColorEffectR143G224B87"/>
+    <material id="ColorEffectR88G143B225-material" name="ColorEffectR88G143B225-material">
+      <instance_effect url="#ColorEffectR88G143B225"/>
+    </material>
+    <material id="ColorEffectR87G120B204-material" name="ColorEffectR87G120B204-material">
+      <instance_effect url="#ColorEffectR87G120B204"/>
     </material>
     <material id="Standardmaterial-material" name="Standardmaterial">
       <instance_effect url="#Standardmaterial"/>
@@ -2321,7 +2374,7 @@
           <perspective>
             <xfov>65.47045</xfov>
             <znear>1</znear>
-            <zfar>2000</zfar>
+            <zfar>4000</zfar>
           </perspective>
         </technique_common>
       </optics>
@@ -2332,7 +2385,7 @@
           <perspective>
             <xfov>65.47045</xfov>
             <znear>1</znear>
-            <zfar>2000</zfar>
+            <zfar>4000</zfar>
           </perspective>
         </technique_common>
       </optics>
@@ -2342,8 +2395,8 @@
         <technique_common>
           <perspective>
             <xfov>65.47045</xfov>
-            <znear>1</znear>
-            <zfar>2000</zfar>
+            <znear>0.03937005</znear>
+            <zfar>39370.08</zfar>
           </perspective>
         </technique_common>
       </optics>
@@ -2354,7 +2407,7 @@
           <perspective>
             <xfov>65.47045</xfov>
             <znear>1</znear>
-            <zfar>2000</zfar>
+            <zfar>4000</zfar>
           </perspective>
         </technique_common>
       </optics>
@@ -2365,7 +2418,7 @@
           <perspective>
             <xfov>65.47045</xfov>
             <znear>1</znear>
-            <zfar>2000</zfar>
+            <zfar>4000</zfar>
           </perspective>
         </technique_common>
       </optics>
@@ -2375,14 +2428,68 @@
         <technique_common>
           <perspective>
             <xfov>65.47045</xfov>
-            <znear>1</znear>
-            <zfar>2000</zfar>
+            <znear>0.03937005</znear>
+            <zfar>39370.08</zfar>
           </perspective>
         </technique_common>
       </optics>
       <extra>
         <technique profile="OpenCOLLADA3dsMax">
           <target>#Camera_ride.Target</target>
+        </technique>
+      </extra>
+    </camera>
+    <camera id="Camera-planet-camera" name="Camera-planet">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov>65.47045</xfov>
+            <znear>1</znear>
+            <zfar>4000</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+    </camera>
+    <camera id="Camera-cabin-logo-camera" name="Camera-cabin-logo">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov>65.47045</xfov>
+            <znear>1</znear>
+            <zfar>4000</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+    </camera>
+    <camera id="Camera-rock-logo-camera" name="Camera-rock-logo">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov>65.47045</xfov>
+            <znear>1</znear>
+            <zfar>4000</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <target>#Camera-rock-logo.Target</target>
+        </technique>
+      </extra>
+    </camera>
+    <camera id="Camera-star-logo-camera" name="Camera-star-logo">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov>45</xfov>
+            <znear>1</znear>
+            <zfar>1000</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <target>#Camera-star-logo.Target</target>
         </technique>
       </extra>
     </camera>
@@ -2597,7 +2704,7 @@
         </extra>
       </node>
       <node id="node-dauphin001" name="dauphin001">
-        <matrix>12.94664 10.38312 -22.66643 225.7175 -24.93137 5.444973 -11.74608 -161.7314 0.05186764 25.52909 11.72409 -66.20292 0 0 0 1</matrix>
+        <matrix>-2.142452 16.92046 22.32262 190.522 -27.47291 -5.635436 1.634879 -161.7314 5.462679 -21.70556 16.97702 -69.11549 0 0 0 1</matrix>
         <node>
           <matrix>0.996195 0.05631599 -0.06651343 -1.068575 -0.05626457 0.9984124 0.002647467 2.76236 0.06655693 0.001104956 0.997782 0.9455179 0 0 0 1</matrix>
           <instance_geometry url="#geom-dauphin001">
@@ -2611,7 +2718,7 @@
           </instance_geometry>
         </node>
         <node id="node-logo_montage_dolphin" name="logo_montage_dolphin">
-          <matrix>4.14524e-4 -0.01049974 0.001010621 -1.23024e-4 -0.006968756 4.8665e-4 0.007914379 -6.90222e-4 -0.007918481 -9.77934e-4 -0.006912243 7.15256e-6 0 0 0 1</matrix>
+          <matrix>4.14524e-4 -0.01049974 0.00101062 -1.21593e-4 -0.006968756 4.86651e-4 0.007914381 -6.9046e-4 -0.007918481 -9.77934e-4 -0.006912243 6.67572e-6 0 0 0 1</matrix>
           <node>
             <matrix>1 0 0 -295.404 0 1 0 -5.11264 0 0 1 -101.8994 0 0 0 1</matrix>
             <instance_geometry url="#geom-logo_montage_dolphin">
@@ -2765,7 +2872,7 @@ MapChannel:1 = -none-
         </extra>
       </node>
       <node id="node-dauphin003" name="dauphin003">
-        <matrix>9.253419 -1.214322 -17.77795 170.5063 -17.81933 -0.5889091 -9.234735 -136.6544 0.03707163 20.03333 -1.349081 -54.11697 0 0 0 1</matrix>
+        <matrix>-8.402903 -7.36212 16.68371 170.5063 -17.81933 -0.5889086 -9.234738 -136.6544 3.875364 -18.67105 -6.287222 -54.11697 0 0 0 1</matrix>
         <node>
           <matrix>0.996195 0.05631599 -0.06651343 -1.068575 -0.05626457 0.9984124 0.002647467 2.76236 0.06655693 0.001104956 0.997782 0.9455179 0 0 0 1</matrix>
           <instance_geometry url="#geom-dauphin003">
@@ -3162,6 +3269,80 @@ MapChannel:1 = -none-
       </node>
       <node id="node-Camera_ride.Target" name="Camera_ride.Target">
         <matrix>34.4166 -0.463827 19.11243 112.3336 19.11806 0.8349879 -34.40647 15.03026 0 39.35849 0.9551651 -0.9551651 0 0 0 1</matrix>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Camera-planet" name="Camera-planet">
+        <matrix>0.613282 -0.2123284 0.7607903 630.2599 0.7898499 0.1706265 -0.5890872 -451.0596 -0.004731059 0.9621866 0.2723497 169.349 0 0 0 1</matrix>
+        <instance_camera url="#Camera-planet-camera"/>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+            <user_properties>LastPose = undefined
+</user_properties>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Camera-cabin-logo" name="Camera-cabin-logo">
+        <matrix>-0.0749764 0.005221311 0.9971716 145 0.9971853 3.9258e-4 0.07497537 -30.01 0 0.9999863 -0.005236049 50.79 0 0 0 1</matrix>
+        <instance_camera url="#Camera-cabin-logo-camera"/>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+            <user_properties>LastPose = undefined
+</user_properties>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Camera-rock-logo" name="Camera-rock-logo">
+        <matrix>0.9936267 0.01855558 -0.1111836 240 -0.1127213 0.1635655 -0.9800715 110 0 0.9863579 0.1646147 30 0 0 0 1</matrix>
+        <instance_camera url="#Camera-rock-logo-camera"/>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Camera-rock-logo.Target" name="Camera-rock-logo.Target">
+        <matrix>1 0 0 249.1777 0 1 0 190.9004 0 0 1 16.41182 0 0 0 1</matrix>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Camera-star-logo" name="Camera-star-logo">
+        <matrix>1 0 0 286 0 0 -1 60 0 1 0 0 0 0 0 1</matrix>
+        <instance_camera url="#Camera-star-logo-camera"/>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Camera-star-logo.Target" name="Camera-star-logo.Target">
+        <matrix>1 0 0 286 0 1 0 111 0 0 1 0 0 0 0 1</matrix>
         <extra>
           <technique profile="OpenCOLLADA">
             <cast_shadows>1</cast_shadows>

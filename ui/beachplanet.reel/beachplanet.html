@@ -108,17 +108,56 @@
                 }
             },
 
+            "planetVP": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node-Camera-planet",
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+
+            "starLogoVP": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node-Camera-star-logo",
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+
+            "cabinLogoVP": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node-Camera-cabin-logo",
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
+
+            "rockLogoVP": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node-Camera-rock-logo",
+                    "scene": {
+                        "@": "scene"
+                    }
+                }
+            },
 
             "nav": {
                 "prototype": "montage/ui/repetition.reel",
                 "properties": {
                     "element": { "#": "nav" },
                     "content": [
+                        { "name": "Planet", "value": { "@" : "planetVP"} },
                         { "name": "SeaGull", "value": { "@" : "seaGullVP"} },
                         { "name": "Buoy", "value": { "@" : "buoyVP"} },
                         { "name": "Cabin", "value": { "@" : "cabinVP"} },
-                        { "name": "Doplhins", "value": { "@" : "dolphinsVP"} },
-                        { "name": "Flowers", "value": { "@" : "flowersVP"} }
+                        { "name": "Doplhins", "value": { "@" : "dolphinsVP"} }
                     ]
                 }
             },
