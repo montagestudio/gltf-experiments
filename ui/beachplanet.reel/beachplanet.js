@@ -56,6 +56,7 @@ exports.BeachPlanet = Component.specialize({
 		value: function(event) {
 			this.templateObjects.viewer.stop();
 			this.templateObjects.viewer.viewPoint = event.target.viewPoint;
+			this.templateObjects.viewer.allowsViewPointControl = event.target.viewPoint === this.templateObjects.planetVP;
 		}
 	},
 
@@ -104,6 +105,18 @@ exports.BeachPlanet = Component.specialize({
 		}
 	},
 
+	returnExploringPlanet: {
+		value: function() {
+			if (this.score < 3) {
+				var self = this;
+				setTimeout(function() {
+					self.templateObjects.viewer.viewPoint = self.templateObjects.planetVP;
+					this.templateObjects.viewer.allowsViewPointControl = true;
+				}, 2000);
+			}
+		}
+	},
+
 	/* handle rock */
 
 	handleRockAction: {
@@ -113,6 +126,7 @@ exports.BeachPlanet = Component.specialize({
 	   			this.templateObjects.viewer.viewPoint = this.templateObjects.rockLogoVP;
 	   			this.templateObjects.logoRock.classList.add(".BeachPlanet-rock-logo-reveal");
 	   			this.score++;
+	   			this.returnExploringPlanet();
 			}
 		}
 	},
@@ -133,6 +147,7 @@ exports.BeachPlanet = Component.specialize({
 	   			this.templateObjects.viewer.viewPoint = this.templateObjects.cabinLogoVP;
 	   			this.templateObjects.door.classList.add(".BeachPlanet-door-open");
 	   			this.score++;
+	   			this.returnExploringPlanet();
     		} 
     	}
     },
@@ -154,6 +169,7 @@ exports.BeachPlanet = Component.specialize({
 	   			this.templateObjects.star.classList.add(".BeachPlanet-star-reveal");
 	   			this.templateObjects.logoStar.classList.add(".BeachPlanet-star-logo-reveal");
 	   			this.score++;
+	   			this.returnExploringPlanet();
     		} 
     	}
     },
