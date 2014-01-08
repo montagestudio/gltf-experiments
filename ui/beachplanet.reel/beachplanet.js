@@ -4,6 +4,8 @@ Component = require("montage/ui/component").Component;
 
 exports.BeachPlanet = Component.specialize({
 
+	backgroundMusicEnabled: { value: false },
+
 	playing: { value: false },
 
 	classes: {
@@ -19,6 +21,7 @@ exports.BeachPlanet = Component.specialize({
 	playSound: {
 		value: function(url, loops) {
 			var music = new Audio(url);
+
           	music.preload = "auto";
           	if (loops === true) {
 	         	music.loop = "loop";
@@ -32,7 +35,9 @@ exports.BeachPlanet = Component.specialize({
 	templateDidLoad: {
 		value: function () {
 			this.templateObjects.viewer.play();
-			this.playSound("sound/WhiteSands.mp3", true);
+			if (this.backgroundMusicEnabled) {
+				this.playSound("sound/WhiteSands.mp3", true);
+			}
 		}
 	},
 

@@ -30,5 +30,5 @@
 .animate {
   transition-property: -webkit-transform;
   transition-duration: 5s;
-  -webkit-transform-origin: 0% 0%;
+  -montage-transform-z-origin: 0%;
 }
