@@ -261,6 +261,6 @@
 }
 
 .BeachPlanet-star-logo-reveal {
-   -webkit-transform: scale3d(15, 15, 15) translate3d(0px, 0px, 35px);
+   -webkit-transform: scale3d(15, 15, 15) translate3d(0, 0, 40);
 }
 

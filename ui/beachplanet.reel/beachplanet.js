@@ -4,17 +4,17 @@ Component = require("montage/ui/component").Component;
 
 exports.BeachPlanet = Component.specialize({
 
-	backgroundMusicEnabled: { value: false },
+	backgroundMusicEnabled: { value: true },
 
 	playing: { value: false },
 
 	classes: {
 		value: {
-			"REVEAL_ROCK" : ".BeachPlanet-rock-reveal",
-			"REVEAL_ROCK_LOGO" : ".BeachPlanet-rock-logo-reveal",
-			"OPEN_DOOR" : ".BeachPlanet-door-open",
-			"REVEAL_STAR" : ".BeachPlanet-star-reveal",
-			"REVEAL_STAR_LOGO" : ".BeachPlanet-star-logo-reveal"
+			"REVEAL_ROCK" : "BeachPlanet-rock-reveal",
+			"REVEAL_ROCK_LOGO" : "BeachPlanet-rock-logo-reveal",
+			"OPEN_DOOR" : "BeachPlanet-door-open",
+			"REVEAL_STAR" : "BeachPlanet-star-reveal",
+			"REVEAL_STAR_LOGO" : "BeachPlanet-star-logo-reveal"
 		}
 	},
 
@@ -136,10 +136,10 @@ exports.BeachPlanet = Component.specialize({
 
 	handleRockAction: {
 		value: function(event) {
-	    	if (this.playing && !this.templateObjects.rock.classList.has(".BeachPlanet-rock-reveal")) {
-	   			this.templateObjects.rock.classList.add(".BeachPlanet-rock-reveal");
+	    	if (this.playing && !this.templateObjects.rock.classList.has("BeachPlanet-rock-reveal")) {
+	   			this.templateObjects.rock.classList.add("BeachPlanet-rock-reveal");
 	   			this.templateObjects.viewer.viewPoint = this.templateObjects.rockLogoVP;
-	   			this.templateObjects.logoRock.classList.add(".BeachPlanet-rock-logo-reveal");
+	   			this.templateObjects.logoRock.classList.add("BeachPlanet-rock-logo-reveal");
 	   			this.score++;
 	   			this.returnExploringPlanet();
 			}
@@ -148,7 +148,7 @@ exports.BeachPlanet = Component.specialize({
 
 	handleRockHover: {
 		value: function(event) {
-        	if (this.playing && !this.templateObjects.rock.classList.has(".BeachPlanet-rock-reveal")) {
+        	if (this.playing && !this.templateObjects.rock.classList.has("BeachPlanet-rock-reveal")) {
 				this.templateObjects.viewer.element.style.cursor="pointer";   			
 	    	}
 		}
@@ -158,9 +158,9 @@ exports.BeachPlanet = Component.specialize({
 
   	handleDoorAction: {
     	value: function(event) {
-    		if (this.playing && !this.templateObjects.door.classList.has(".BeachPlanet-door-open")) {
+    		if (this.playing && !this.templateObjects.door.classList.has("BeachPlanet-door-open")) {
 	   			this.templateObjects.viewer.viewPoint = this.templateObjects.cabinLogoVP;
-	   			this.templateObjects.door.classList.add(".BeachPlanet-door-open");
+	   			this.templateObjects.door.classList.add("BeachPlanet-door-open");
 	   			this.score++;
 	   			this.returnExploringPlanet();
     		} 
@@ -169,7 +169,7 @@ exports.BeachPlanet = Component.specialize({
 
 	handleDoorHover: {
 		value: function(event) {
-        	if (this.playing && !this.templateObjects.door.classList.has(".BeachPlanet-door-open")) {
+        	if (this.playing && !this.templateObjects.door.classList.has("BeachPlanet-door-open")) {
 				this.templateObjects.viewer.element.style.cursor="pointer";   			
 	    	}
 		}
@@ -179,10 +179,10 @@ exports.BeachPlanet = Component.specialize({
 
   	handleStarAction: {
     	value: function(event) {
-    		if (this.playing && !this.templateObjects.star.classList.has(".BeachPlanet-star-reveal")) {
+    		if (this.playing && !this.templateObjects.star.classList.has("BeachPlanet-star-reveal")) {
 	   			this.templateObjects.viewer.viewPoint = this.templateObjects.starLogoVP;
-	   			this.templateObjects.star.classList.add(".BeachPlanet-star-reveal");
-	   			this.templateObjects.logoStar.classList.add(".BeachPlanet-star-logo-reveal");
+	   			this.templateObjects.star.classList.add("BeachPlanet-star-reveal");
+	   			this.templateObjects.logoStar.classList.add("BeachPlanet-star-logo-reveal");
 	   			this.score++;
 	   			this.returnExploringPlanet();
     		} 
@@ -191,7 +191,7 @@ exports.BeachPlanet = Component.specialize({
 
 	handleStarHover: {
 		value: function(event) {
-        	if (this.playing && !this.templateObjects.star.classList.has(".BeachPlanet-star-reveal")) {
+        	if (this.playing && !this.templateObjects.star.classList.has("BeachPlanet-star-reveal")) {
 				this.templateObjects.viewer.element.style.cursor="pointer";   			
 	    	}
 		}

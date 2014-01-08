@@ -4,7 +4,7 @@
 .penguin .stage {
   height: 800px !important;
 }
-.grow:hover {
+.animate:hover {
   -webkit-transform: scale3d(1, 1, 1.5);
 }
 

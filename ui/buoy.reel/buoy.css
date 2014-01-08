@@ -24,7 +24,7 @@
   text-align: center;
   width: 100%;
 }
-.grow:hover {
+.animate:hover {
   -webkit-transform: scale3d(3, 3, 3);
 }
 .animate {
