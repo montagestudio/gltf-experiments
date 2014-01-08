@@ -223,6 +223,10 @@
   -webkit-transform: translate3d(0px, 0px, 0.8px);
 }
 
+.BeachPlanet-rock-animate:hover {
+  cursor: pointer;
+}
+
 .BeachPlanet-rock-animate {
   transition-property: -webkit-transform;
   transition-duration: 3s;
@@ -233,6 +237,10 @@
    -webkit-transform: scale3d(5, 5, 5) translate3d(0px, 0px, 35px);
 }
 
+.BeachPlanet-door-animate:hover {
+  cursor: pointer;
+}
+
 .BeachPlanet-door-animate {
   transition-property: -webkit-transform;
   transition-duration: 3s;
@@ -241,6 +249,10 @@
 
 .BeachPlanet-door-open {
   -webkit-transform: rotateZ(-130deg);
+}
+
+.BeachPlanet-star-animate:hover {
+  cursor: pointer;
 }
 
 .BeachPlanet-star-animate {

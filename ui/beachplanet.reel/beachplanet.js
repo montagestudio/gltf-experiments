@@ -146,14 +146,6 @@ exports.BeachPlanet = Component.specialize({
 		}
 	},
 
-	handleRockHover: {
-		value: function(event) {
-        	if (this.playing && !this.templateObjects.rock.classList.has("BeachPlanet-rock-reveal")) {
-				this.templateObjects.viewer.element.style.cursor="pointer";   			
-	    	}
-		}
-	},
-
 	/* handle door */
 
   	handleDoorAction: {
@@ -167,14 +159,6 @@ exports.BeachPlanet = Component.specialize({
     	}
     },
 
-	handleDoorHover: {
-		value: function(event) {
-        	if (this.playing && !this.templateObjects.door.classList.has("BeachPlanet-door-open")) {
-				this.templateObjects.viewer.element.style.cursor="pointer";   			
-	    	}
-		}
-	},
-
 	/* handle star */
 
   	handleStarAction: {
@@ -187,16 +171,6 @@ exports.BeachPlanet = Component.specialize({
 	   			this.returnExploringPlanet();
     		} 
     	}
-    },
-
-	handleStarHover: {
-		value: function(event) {
-        	if (this.playing && !this.templateObjects.star.classList.has("BeachPlanet-star-reveal")) {
-				this.templateObjects.viewer.element.style.cursor="pointer";   			
-	    	}
-		}
-	}
-
-
+    }
 
 });
