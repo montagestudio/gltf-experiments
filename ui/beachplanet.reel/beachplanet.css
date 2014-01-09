@@ -220,7 +220,7 @@
 /* Game: CSS applied to 3D Content ------------------------- */
 
 .BeachPlanet-rock-reveal {
-  -webkit-transform: translate3d(0px, 0px, 0.8px);
+  -webkit-transform: translate3d(0, 0, 0.8);
 }
 
 .BeachPlanet-rock-animate:hover {
@@ -234,7 +234,7 @@
 }
 
 .BeachPlanet-rock-logo-reveal {
-   -webkit-transform: scale3d(5, 5, 5) translate3d(0px, 0px, 35px);
+   -webkit-transform: scale3d(5, 5, 5) translate3d(0, 0, 35);
 }
 
 .BeachPlanet-door-animate:hover {
@@ -269,7 +269,7 @@
 
 
 .BeachPlanet-star-reveal {
-   -webkit-transform: translate3d(-1.6px, 0px, -0.2px);
+   -webkit-transform: translate3d(-1.6, 0, -0.2);
 }
 
 .BeachPlanet-star-logo-reveal {
