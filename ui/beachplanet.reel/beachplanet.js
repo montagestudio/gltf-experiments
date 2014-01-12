@@ -1,6 +1,4 @@
-var Component;
-
-Component = require("montage/ui/component").Component;
+var Component = require("montage/ui/component").Component;
 
 exports.BeachPlanet = Component.specialize({
 
@@ -8,6 +6,10 @@ exports.BeachPlanet = Component.specialize({
 
 	playing: { value: false },
 
+	MAX_SCORE: { value: 4},
+
+	dolphinLogoFound: { value: false },
+	
 	classes: {
 		value: {
 			"REVEAL_ROCK" : "BeachPlanet-rock-reveal",
@@ -32,17 +34,37 @@ exports.BeachPlanet = Component.specialize({
 		}
 	},
 
+	animateDolphins: {
+		value: function() {
+	   		this.templateObjects.logoDolphin.classList.remove("BeachPlanet-dolphin-logo-jump");
+	   		this.templateObjects.dolphin.classList.remove("BeachPlanet-dolphin-jump");
+	   		this.templateObjects.dolphin2.classList.remove("BeachPlanet-dolphin-jump");
+
+			if (this.dolphinLogoFound === false)
+		   		this.templateObjects.logoDolphin.classList.add("BeachPlanet-dolphin-logo-jump");
+	   		this.templateObjects.dolphin.classList.add("BeachPlanet-dolphin-jump");
+	   		this.templateObjects.dolphin2.classList.add("BeachPlanet-dolphin-jump");
+			
+			var self = this;
+			setTimeout(function() {
+				self.animateDolphins();
+			}, 4000);
+		}
+	},
+
 	templateDidLoad: {
 		value: function () {
 			this.templateObjects.viewer.play();
 			if (this.backgroundMusicEnabled) {
 				this.playSound("sound/WhiteSands.mp3", true);
 			}
+			this.animateDolphins();
 		}
 	},
 
 	prepareForPlay: {
 		value:function() {
+	   		this.dolphinLogoFound = false;
 			this.score = 0;
 			this.templateObjects.viewer.stop();
 			this.templateObjects.viewer.viewPoint = this.templateObjects.planetVP;
@@ -77,7 +99,7 @@ exports.BeachPlanet = Component.specialize({
 
 	gameWon: {
 		value: function() {
-			this.playSound("sound/completed.wav");
+    		this.playSound("sound/getruby.mp3");
     		//update title		
     		this.classList.add("isWinner");
     		this.classList.remove("isPlaying");
@@ -96,7 +118,7 @@ exports.BeachPlanet = Component.specialize({
 
 	scoreDidChange: {
 		value: function() {
-			if (this.score === 3) {
+			if (this.score === this.MAX_SCORE) {
 				var self = this;
 				setTimeout(function() {
 					self.gameWon();
@@ -122,7 +144,7 @@ exports.BeachPlanet = Component.specialize({
 
 	returnExploringPlanet: {
 		value: function() {
-			if (this.score < 3) {
+			if (this.score < this.MAX_SCORE) {
 				var self = this;
 				setTimeout(function() {
 					self.templateObjects.viewer.viewPoint = self.templateObjects.planetVP;
@@ -171,6 +193,17 @@ exports.BeachPlanet = Component.specialize({
 	   			this.returnExploringPlanet();
     		} 
     	}
-    }
+    },
 
+  	handleLogoDolphinAction: {
+    	value: function(event) {
+    		if (this.dolphinLogoFound === false) {
+		   		this.score++;
+		   		this.templateObjects.viewer.viewPoint = this.templateObjects.dolphinsVP;
+	   			this.returnExploringPlanet();
+	   			this.dolphinLogoFound = true;
+    		}
+    	} 
+	}
+    
 });

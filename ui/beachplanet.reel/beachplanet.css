@@ -267,7 +267,6 @@
   -webkit-transform-origin: 50% 50%;
 }
 
-
 .BeachPlanet-star-reveal {
    -webkit-transform: translate3d(-1.6, 0, -0.2);
 }
@@ -276,3 +275,30 @@
    -webkit-transform: scale3d(15, 15, 15) translate3d(0, 0, 40);
 }
 
+.BeachPlanet-dolphin-animate {
+  transition-property: -webkit-transform;
+  transition-duration: 4s;
+  transition-timing-function: linear;
+  -webkit-transform: translateY(-1.5);
+
+  -webkit-transform-origin: 50% 5000%;
+}
+
+.BeachPlanet-dolphin-jump {
+  -webkit-transform: rotateX(-360deg) translateY(-1.5);
+}
+
+.BeachPlanet-dolphin-logo-animate {
+  -webkit-transform:  rotateY(-200deg) translate3d(400,0,-250);
+  -montage-transform-z-origin: 2500%;
+  transition-property: -webkit-transform;
+  transition-duration: 4s;
+}
+
+.BeachPlanet-dolphin-logo-jump {
+  -webkit-transform: translate3d(400,0,-250) rotateY(200deg);
+}
+
+.BeachPlanet-dolphin-logo-animate:hover {
+  cursor: pointer;
+}

@@ -255,6 +255,58 @@
                 ]
             },
 
+            "dolphin": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node_11",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('BeachPlanet-dolphin-animate')": {
+                        "<-": "true"
+                    }
+                }
+            },
+
+            "dolphin2": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node_20",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('BeachPlanet-dolphin-animate')": {
+                        "<-": "true"
+                    }
+                }
+            },
+
+            "logoDolphin": {
+                "prototype": "mjs-volume/runtime/node",
+                "properties": {
+                    "id": "node_13",
+                    "scene": {
+                        "@": "scene"
+                    }
+                },
+                "bindings": {
+                    "classList.has('BeachPlanet-dolphin-logo-animate')": {
+                        "<-": "true"
+                    }
+                },
+                "listeners": [{
+                    "type": "action",
+                    "listener": {
+                        "@": "owner"
+                    }
+                }]
+            },
+
+
             "navItem": {
                 "prototype": "digit/ui/button.reel",
                 "properties": {
