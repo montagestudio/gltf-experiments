@@ -302,3 +302,14 @@
 .BeachPlanet-dolphin-logo-animate:hover {
   cursor: pointer;
 }
+
+.BeachPlanet-buoy-animate:hover {
+  -webkit-transform: scale3d(3, 3, 3);
+  cursor: pointer;
+}
+
+.BeachPlanet-buoy-animate {
+  transition-property: -webkit-transform;
+  transition-duration: 3s;
+  -montage-transform-z-origin: 0%;
+}
