@@ -169,7 +169,7 @@
             <reflective>
               <color>0 0 0 1</color>
             </reflective>
-            <transparent opaque="RGB_ZERO">
+            <transparent opaque="A_ONE">
               <texture texture="assarium_png-sampler" texcoord="CHANNEL1"/>
             </transparent>
             <transparency>
@@ -180,6 +180,7 @@
       </profile_COMMON>
       <extra>
         <technique profile="OpenCOLLADA3dsMax">
+          		<double_sided>1</double_sided>
           <extended_shader>
             <apply_reflection_dimming>0</apply_reflection_dimming>
             <dim_level>0</dim_level>
@@ -673,7 +674,7 @@
             <reflective>
               <color>0 0 0 1</color>
             </reflective>
-            <transparent opaque="RGB_ZERO">
+            <transparent opaque="A_ONE">
               <texture texture="flowers_orange_PNG-sampler" texcoord="CHANNEL1"/>
             </transparent>
             <transparency>
@@ -736,7 +737,7 @@
             <reflective>
               <color>0 0 0 1</color>
             </reflective>
-            <transparent opaque="RGB_ZERO">
+            <transparent opaque="A_ONE">
               <texture texture="flowers_whites_PNG-sampler" texcoord="CHANNEL1"/>
             </transparent>
             <transparency>
@@ -799,7 +800,7 @@
             <reflective>
               <color>0 0 0 1</color>
             </reflective>
-            <transparent opaque="RGB_ZERO">
+            <transparent opaque="A_ONE">
               <texture texture="flowers_pink_PNG-sampler" texcoord="CHANNEL1"/>
             </transparent>
             <transparency>
@@ -862,7 +863,7 @@
             <reflective>
               <color>0 0 0 1</color>
             </reflective>
-            <transparent opaque="RGB_ZERO">
+            <transparent opaque="A_ONE">
               <texture texture="leaves_png-sampler" texcoord="CHANNEL1"/>
             </transparent>
             <transparency>
@@ -873,6 +874,7 @@
       </profile_COMMON>
       <extra>
         <technique profile="OpenCOLLADA3dsMax">
+          		<double_sided>1</double_sided>
           <extended_shader>
             <apply_reflection_dimming>0</apply_reflection_dimming>
             <dim_level>0</dim_level>
