@@ -1,24 +1,24 @@
 {
     "accessors": {
-        "accessor_100": {
+        "accessor_0": {
             "bufferView": "bufferView_707",
             "byteOffset": 0,
             "count": 501,
             "type": 5126
         },
-        "accessor_101": {
+        "accessor_1": {
             "bufferView": "bufferView_707",
             "byteOffset": 2004,
             "count": 501,
             "type": 35665
         },
-        "accessor_102": {
+        "accessor_2": {
             "bufferView": "bufferView_707",
             "byteOffset": 8016,
             "count": 501,
             "type": 35665
         },
-        "accessor_103": {
+        "accessor_3": {
             "bufferView": "bufferView_707",
             "byteOffset": 14028,
             "count": 501,
@@ -1427,10 +1427,10 @@
             ],
             "count": 501,
             "parameters": {
-                "TIME": "accessor_100",
-                "rotation": "accessor_103",
-                "scale": "accessor_101",
-                "translation": "accessor_102"
+                "TIME": "accessor_0",
+                "rotation": "accessor_3",
+                "scale": "accessor_1",
+                "translation": "accessor_2"
             },
             "samplers": {
                 "animation_0_rotation_sampler": {
@@ -1455,31 +1455,31 @@
         "extras": {
             "premultipliedAlpha": true
         },
-        "generator": "collada2gltf@e7a52774d9c9cd485f4c19d85be9187e6dc842a2"
+        "generator": "collada2gltf@4f3a8ea4bf5993093d60c364b78e557ea76d813b"
     },
     "bufferViews": {
         "bufferView_705": {
-            "buffer": "beachPlanet",
+            "buffer": "beachplanet",
             "byteLength": 1807584,
             "byteOffset": 0,
             "target": 34962
         },
         "bufferView_706": {
-            "buffer": "beachPlanet",
+            "buffer": "beachplanet",
             "byteLength": 112976,
             "byteOffset": 1807584,
             "target": 34963
         },
         "bufferView_707": {
-            "buffer": "beachPlanet",
+            "buffer": "beachplanet",
             "byteLength": 22044,
             "byteOffset": 1920560
         }
     },
     "buffers": {
-        "beachPlanet": {
+        "beachplanet": {
             "byteLength": 1942604,
-            "path": "beachPlanet.bin",
+            "path": "beachplanet.bin",
             "type": "arraybuffer"
         }
     },
@@ -1794,7 +1794,7 @@
         },
         "flowersWhite": {
             "instanceTechnique": {
-                "technique": "technique2",
+                "technique": "technique3",
                 "values": {
                     "ambient": "texture_image_11",
                     "diffuse": "texture_image_11",
@@ -1817,7 +1817,7 @@
         },
         "flowersorange": {
             "instanceTechnique": {
-                "technique": "technique2",
+                "technique": "technique3",
                 "values": {
                     "ambient": "texture_image_10",
                     "diffuse": "texture_image_10",
@@ -1840,7 +1840,7 @@
         },
         "flowerspink": {
             "instanceTechnique": {
-                "technique": "technique2",
+                "technique": "technique3",
                 "values": {
                     "ambient": "texture_image_12",
                     "diffuse": "texture_image_12",
@@ -3687,8 +3687,8 @@
                 "a_position",
                 "a_texcoord0"
             ],
-            "fragmentShader": "beachPlanet0FS",
-            "vertexShader": "beachPlanet0VS"
+            "fragmentShader": "beachplanet0FS",
+            "vertexShader": "beachplanet0VS"
         },
         "program_1": {
             "attributes": [
@@ -3696,8 +3696,17 @@
                 "a_position",
                 "a_texcoord0"
             ],
-            "fragmentShader": "beachPlanet2FS",
-            "vertexShader": "beachPlanet2VS"
+            "fragmentShader": "beachplanet2FS",
+            "vertexShader": "beachplanet2VS"
+        },
+        "program_2": {
+            "attributes": [
+                "a_normal",
+                "a_position",
+                "a_texcoord0"
+            ],
+            "fragmentShader": "beachplanet4FS",
+            "vertexShader": "beachplanet4VS"
         }
     },
     "samplers": {
@@ -3755,17 +3764,23 @@
         }
     },
     "shaders": {
-        "beachPlanet0FS": {
-            "path": "beachPlanet0FS.glsl"
+        "beachplanet0FS": {
+            "path": "beachplanet0FS.glsl"
         },
-        "beachPlanet0VS": {
-            "path": "beachPlanet0VS.glsl"
+        "beachplanet0VS": {
+            "path": "beachplanet0VS.glsl"
         },
-        "beachPlanet2FS": {
-            "path": "beachPlanet2FS.glsl"
+        "beachplanet2FS": {
+            "path": "beachplanet2FS.glsl"
         },
-        "beachPlanet2VS": {
-            "path": "beachPlanet2VS.glsl"
+        "beachplanet2VS": {
+            "path": "beachplanet2VS.glsl"
+        },
+        "beachplanet4FS": {
+            "path": "beachplanet4FS.glsl"
+        },
+        "beachplanet4VS": {
+            "path": "beachplanet4VS.glsl"
         }
     },
     "skins": {},
@@ -3909,7 +3924,7 @@
                     "details": {
                         "commonProfile": {
                             "extras": {
-                                "doubleSided": false
+                                "doubleSided": true
                             },
                             "lightingModel": "Phong",
                             "parameters": [
@@ -3951,6 +3966,102 @@
                             "sfactor": 1
                         },
                         "cullFaceEnable": 0,
+                        "depthMask": 1,
+                        "depthTestEnable": 1
+                    }
+                }
+            }
+        },
+        "technique3": {
+            "parameters": {
+                "ambient": {
+                    "type": 35678
+                },
+                "diffuse": {
+                    "type": 35678
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "texcoord0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "pass": "defaultPass",
+            "passes": {
+                "defaultPass": {
+                    "details": {
+                        "commonProfile": {
+                            "extras": {
+                                "doubleSided": false
+                            },
+                            "lightingModel": "Phong",
+                            "parameters": [
+                                "diffuse",
+                                "emission",
+                                "modelViewMatrix",
+                                "normalMatrix",
+                                "projectionMatrix",
+                                "shininess"
+                            ],
+                            "texcoordBindings": {
+                                "ambient": "TEXCOORD_0",
+                                "diffuse": "TEXCOORD_0"
+                            }
+                        },
+                        "type": "COLLADA-1.4.1/commonProfile"
+                    },
+                    "instanceProgram": {
+                        "attributes": {
+                            "a_normal": "normal",
+                            "a_position": "position",
+                            "a_texcoord0": "texcoord0"
+                        },
+                        "program": "program_2",
+                        "uniforms": {
+                            "u_diffuse": "diffuse",
+                            "u_emission": "emission",
+                            "u_modelViewMatrix": "modelViewMatrix",
+                            "u_normalMatrix": "normalMatrix",
+                            "u_projectionMatrix": "projectionMatrix",
+                            "u_shininess": "shininess"
+                        }
+                    },
+                    "states": {
+                        "blendEnable": 1,
+                        "blendEquation": 32774,
+                        "blendFunc": {
+                            "dfactor": 771,
+                            "sfactor": 1
+                        },
+                        "cullFaceEnable": 1,
                         "depthMask": 1,
                         "depthTestEnable": 1
                     }
