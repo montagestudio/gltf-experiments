@@ -1,8 +1,8 @@
 var Component = require("montage/ui/component").Component;
 
-exports.BeachPlanet = Component.specialize({
+exports.Beachplanet = Component.specialize({
 
-	backgroundMusicEnabled: { value: true },
+	backgroundMusicEnabled: { value: false },
 
 	playing: { value: false },
 

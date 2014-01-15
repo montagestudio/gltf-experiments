@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="fallback.css" />
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": { "#": "fallback" }
+                }
+            },
+            "substitution": {
+                "prototype": "montage/ui/substitution.reel",
+                "properties": {
+                    "element": {"#": "substitution"},
+                    "switchValue": "beachplanet"
+                }
+            },
+            "beachplanet": {
+                "prototype": "ui/beachplanet.reel",
+                "properties": {
+                    "element": {"#": "beachplanet"}
+                }
+            },
+            "image": {
+                "prototype": "ui/beachplanet.reel",
+                "properties": {
+                    "element": {"#": "image"}
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div data-montage-id="fallback"  class="fallback">
+        <div data-montage-id="substitution">
+            <div data-arg="beachplanet" data-montage-id="beachplanet"></div>
+            <div data-arg="image" data-montage-id="image"></div>
+        </div>
+    </div>
+</body>
+
+</html>
