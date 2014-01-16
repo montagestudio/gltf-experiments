@@ -1,7 +1,34 @@
 .Fallback {
-    height: 100%;
+  height: 100%;
 }
 
 .Fallback-substitution {
-    height: 100%;
+  height: 100%;
+}
+
+.Fallback-logo {
+  text-align: center;
+  position: absolute;
+  top: 0; bottom:0; left: 0; right:0;
+  margin: auto;
+}
+
+.Fallback h1 {
+  color: #fff;
+  border: #000;
+  font-weight: bold;
+  font-size: 30px;
+  -webkit-text-stroke: 1px #000;
+}
+
+.Fallback #top {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.Fallback #bottom {
+  position: fixed;
+  margin-top: 70px;
+  text-align: center;
+  width: 100%;
 }
