@@ -6,16 +6,10 @@
         {
             "owner": {
                 "properties": {
-                    "element": {
-                        "#": "beachplanet"
-                    }
-                },
-                "bindings": {
-                    "status": {
-                        "<-": "@scene.status"
-                    }
+                    "element": { "#": "beachplanet" }
                 }
             },
+
             "scene": {
                 "prototype": "mjs-volume/runtime/scene",
                 "properties": {
@@ -27,9 +21,7 @@
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
                     "id": "node-Camera_cabin",
-                    "scene": {
-                        "@": "scene"
-                    }
+                    "scene": { "@": "scene" }
                 }
             },
 
@@ -37,9 +29,7 @@
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
                     "id": "node_6",
-                    "scene": {
-                        "@": "scene"
-                    }
+                    "scene": { "@": "scene" }
                 },
                 "bindings": {
                     "classList.has('animate')": { "<-": "true" },
@@ -47,22 +37,27 @@
                 },
                 "listeners": [{
                     "type": "action",
-                    "listener": {
-                        "@": "owner"
-                    }
+                    "listener": { "@": "owner" }
                 }]
+            },
+
+            "substitution": {
+                "prototype": "montage/ui/substitution.reel",
+                "properties": {
+                    "element": {"#": "substitution"},
+                    "switchValue": "static"
+                },
+                "bindings": {
+                    "switchValue": {"<-": "@owner.viewKey"}
+                }                
             },
 
             "viewer": {
                 "prototype": "mjs-volume/ui/view.reel",
                 "properties": {
                     "allowsViewPointControl" : false,
-                    "element": {
-                        "#": "viewer"
-                    },
-                    "scene": {
-                        "@": "scene"
-                    },
+                    "element": { "#": "viewer" },
+                    "scene": { "@": "scene" },
                     "viewPoint": { "@" : "doorViewPoint" }
                 }
             }
@@ -71,10 +66,15 @@
 </head>
 
 <body>
-    <div data-montage-id="beachplanet" class="beachplanet">
-        <h1 id="top">Open</h1>
-        <h1 id="bottom">this door</h1>
-        <div data-montage-id="viewer" class="stage"></div>
+    <div data-montage-id="beachplanet">
+    <div data-montage-id="substitution">
+        <div data-arg="static">This demo requires WebGL. Please your browser has WebGL supported and enabled
+        </div>
+        <div data-arg="webgl"  class="beachplanet">
+            <h1 id="top">Open</h1>
+            <h1 id="bottom">this door</h1>
+            <div data-montage-id="viewer" class="stage"></div>
+        </div>
     </div>
 </body>
 
