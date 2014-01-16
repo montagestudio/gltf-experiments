@@ -4,19 +4,27 @@ exports.Beachplanet = Component.specialize({
 
 	backgroundMusicEnabled: { value: true },
 
-	playing: { value: false },
-
 	MAX_SCORE: { value: 4},
 
 	dolphinLogoFound: { value: false },
 	
-	classes: {
-		value: {
-			"REVEAL_ROCK" : "BeachPlanet-rock-reveal",
-			"REVEAL_ROCK_LOGO" : "BeachPlanet-rock-logo-reveal",
-			"OPEN_DOOR" : "BeachPlanet-door-open",
-			"REVEAL_STAR" : "BeachPlanet-star-reveal",
-			"REVEAL_STAR_LOGO" : "BeachPlanet-star-logo-reveal"
+	rockRevealed: { value: false },
+
+	doorOpened: { value: false },
+
+	starRevealed: { value: false },
+
+	_score: { value: 0 },
+
+	score: {
+		get: function() {
+			return this._score;
+		},
+		set: function(value) {
+			if (this.score !== value) {
+				this._score = value;
+				this.scoreDidChange();
+			}
 		}
 	},
 
@@ -28,7 +36,7 @@ exports.Beachplanet = Component.specialize({
           	if (loops === true) {
 	         	music.loop = "loop";
 	       	}
-            music.addEventListener('canplaythrough', function () {
+            music.addEventListener('canplay', function () {
 				music.play();
             }, false);
 		}
@@ -68,8 +76,6 @@ exports.Beachplanet = Component.specialize({
 			this.score = 0;
 			this.templateObjects.viewer.stop();
 			this.templateObjects.viewer.viewPoint = this.templateObjects.planetVP;
-
-			this.playing = true;
 		}
 	},
     
@@ -107,12 +113,7 @@ exports.Beachplanet = Component.specialize({
 			this.templateObjects.viewer.viewPoint = this.templateObjects.cameraRideViewPoint;
 			this.templateObjects.viewer.play();  
 
-	   		this.templateObjects.logoRock.classList.remove(this.classes.REVEAL_ROCK_LOGO);
-	   		this.templateObjects.rock.classList.remove(this.classes.REVEAL_ROCK);
-	   		this.templateObjects.door.classList.remove(this.classes.OPEN_DOOR);
-	   		this.templateObjects.star.classList.remove(this.classes.REVEAL_STAR);
-	   		this.templateObjects.logoStar.classList.remove(this.classes.REVEAL_STAR_LOGO);
-
+			this.starRevealed = this.doorOpened = this.rockRevealed  = this.playing = false;    		
     	}
 	},
 
@@ -127,18 +128,7 @@ exports.Beachplanet = Component.specialize({
     		}
 
     		this.playSound("sound/getruby.mp3");
-		}
-	},
-
-	_score: { value: 0 },
-
-	score: {
-		get: function() {
-			return this._score;
-		},
-		set: function(value) {
-			this._score = value;
-			this.scoreDidChange();
+	   		this.returnExploringPlanet();
 		}
 	},
 
@@ -158,12 +148,10 @@ exports.Beachplanet = Component.specialize({
 
 	handleRockAction: {
 		value: function(event) {
-	    	if (this.playing && !this.templateObjects.rock.classList.has("BeachPlanet-rock-reveal")) {
-	   			this.templateObjects.rock.classList.add("BeachPlanet-rock-reveal");
-	   			this.templateObjects.viewer.viewPoint = this.templateObjects.rockLogoVP;
-	   			this.templateObjects.logoRock.classList.add("BeachPlanet-rock-logo-reveal");
+			if (this.rockRevealed === false) {
+				this.templateObjects.viewer.viewPoint = this.templateObjects.rockLogoVP;
+				this.rockRevealed = true;
 	   			this.score++;
-	   			this.returnExploringPlanet();
 			}
 		}
 	},
@@ -172,12 +160,11 @@ exports.Beachplanet = Component.specialize({
 
   	handleDoorAction: {
     	value: function(event) {
-    		if (this.playing && !this.templateObjects.door.classList.has("BeachPlanet-door-open")) {
+    		if (this.doorOpened === false) {
 	   			this.templateObjects.viewer.viewPoint = this.templateObjects.cabinLogoVP;
-	   			this.templateObjects.door.classList.add("BeachPlanet-door-open");
+	   			this.doorOpened = true;
 	   			this.score++;
-	   			this.returnExploringPlanet();
-    		} 
+    		}
     	}
     },
 
@@ -185,23 +172,22 @@ exports.Beachplanet = Component.specialize({
 
   	handleStarAction: {
     	value: function(event) {
-    		if (this.playing && !this.templateObjects.star.classList.has("BeachPlanet-star-reveal")) {
+    		if (this.starRevealed === false) {
 	   			this.templateObjects.viewer.viewPoint = this.templateObjects.starLogoVP;
-	   			this.templateObjects.star.classList.add("BeachPlanet-star-reveal");
-	   			this.templateObjects.logoStar.classList.add("BeachPlanet-star-logo-reveal");
+	   			this.starRevealed = true;
 	   			this.score++;
-	   			this.returnExploringPlanet();
-    		} 
+    		}
     	}
     },
+
+	/* handle star */
 
   	handleLogoDolphinAction: {
     	value: function(event) {
     		if (this.dolphinLogoFound === false) {
-		   		this.score++;
 		   		this.templateObjects.viewer.viewPoint = this.templateObjects.dolphinsVP;
-	   			this.returnExploringPlanet();
 	   			this.dolphinLogoFound = true;
+		   		this.score++;
     		}
     	} 
 	}

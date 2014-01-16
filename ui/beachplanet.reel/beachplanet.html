@@ -142,10 +142,8 @@
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
                     "id": "node-Camera-rock-logo",
-                    "scene": {
-                        "@": "scene"
-                    }
-                }
+                    "scene": { "@": "scene" }
+                }             
             },
 
             "nav": {
@@ -166,14 +164,11 @@
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
                     "id": "node_36",
-                    "scene": {
-                        "@": "scene"
-                    }
+                    "scene": { "@": "scene" }
                 },
                 "bindings": {
-                    "classList.has('BeachPlanet-star-logo-animate')": {
-                        "<-": "true"
-                    }
+                    "classList.has('BeachPlanet-star-logo-animate')": { "<-": "true" },
+                    "classList.has('BeachPlanet-star-logo-reveal')": { "<-": "@owner.starRevealed" }
                 }
             },
 
@@ -181,14 +176,11 @@
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
                     "id": "node_23",
-                    "scene": {
-                        "@": "scene"
-                    }
+                    "scene": { "@": "scene" }
                 },
                 "bindings": {
-                    "classList.has('BeachPlanet-star-animate')": {
-                        "<-": "true"
-                    }
+                    "classList.has('BeachPlanet-star-animate')": { "<-": "true" },
+                    "classList.has('BeachPlanet-star-reveal')": { "<-": "@owner.starRevealed" }
                 },
                 "listeners": [{
                     "type": "action",
@@ -202,20 +194,17 @@
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
                     "id": "node_25",
-                    "scene": {
-                        "@": "scene"
-                    }
+                    "scene": { "@": "scene" }
                 },
                 "bindings": {
-                    "classList.has('BeachPlanet-rock-animate')": {
-                        "<-": "true"
-                    }
+                    "classList.has('BeachPlanet-rock-animate')": { "<-": "true" },
+                    "classList.has('BeachPlanet-rock-reveal')": { "<-": "@owner.rockRevealed" }
                 },
-                "listeners": [{
-                    "type": "action",
-                    "listener": {
-                        "@": "owner"
-                    }}                   
+                "listeners": [
+                    {
+                        "type": "action",
+                        "listener": { "@": "owner" }
+                    }
                 ]
             },
 
@@ -223,14 +212,11 @@
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
                     "id": "node_38",
-                    "scene": {
-                        "@": "scene"
-                    }
+                    "scene": { "@": "scene" }
                 },
                 "bindings": {
-                    "classList.has('BeachPlanet-rock-animate')": {
-                        "<-": "true"
-                    }
+                    "classList.has('BeachPlanet-rock-animate')": { "<-": "true" },
+                    "classList.has('BeachPlanet-rock-logo-reveal')": { "<-": "@owner.rockRevealed" }
                 }
             },
 
@@ -238,14 +224,11 @@
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
                     "id": "node_6",
-                    "scene": {
-                        "@": "scene"
-                    }
+                    "scene": { "@": "scene" }
                 },
                 "bindings": {
-                    "classList.has('BeachPlanet-door-animate')": {
-                        "<-": "true"
-                    }
+                    "classList.has('BeachPlanet-door-animate')": { "<-": "true" },
+                    "classList.has('BeachPlanet-door-open')": { "<-": "@owner.doorOpened" }
                 },
                 "listeners": [{
                     "type": "action",
@@ -259,9 +242,7 @@
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
                     "id": "node_31",
-                    "scene": {
-                        "@": "scene"
-                    }
+                    "scene": { "@": "scene" }
                 },
                 "bindings": {
                     "classList.has('BeachPlanet-buoy-animate')": {
@@ -273,10 +254,8 @@
             "dolphin": {
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
-                    "id": "node_11",
-                    "scene": {
-                        "@": "scene"
-                    }
+                    "id": "node_11", 
+                    "scene": { "@": "scene" }
                 },
                 "bindings": {
                     "classList.has('BeachPlanet-dolphin-animate')": {
@@ -289,14 +268,10 @@
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
                     "id": "node_20",
-                    "scene": {
-                        "@": "scene"
-                    }
+                    "scene": { "@": "scene" }
                 },
                 "bindings": {
-                    "classList.has('BeachPlanet-dolphin-animate')": {
-                        "<-": "true"
-                    }
+                    "classList.has('BeachPlanet-dolphin-animate')": { "<-": "true" }
                 }
             },
 
@@ -304,9 +279,7 @@
                 "prototype": "mjs-volume/runtime/node",
                 "properties": {
                     "id": "node_13",
-                    "scene": {
-                        "@": "scene"
-                    }
+                    "scene": { "@": "scene" }
                 },
                 "bindings": {
                     "classList.has('BeachPlanet-dolphin-logo-animate')": {
