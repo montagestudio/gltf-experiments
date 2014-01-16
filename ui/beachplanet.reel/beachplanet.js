@@ -2,9 +2,11 @@ var Component = require("montage/ui/component").Component;
 
 exports.Beachplanet = Component.specialize({
 
-	backgroundMusicEnabled: { value: true },
-
 	MAX_SCORE: { value: 4},
+
+	audios: { value: null },
+
+	backgroundMusicEnabled: { value: true },
 
 	dolphinLogoFound: { value: false },
 	
@@ -30,9 +32,15 @@ exports.Beachplanet = Component.specialize({
 
 	playSound: {
 		value: function(url, loops) {
-			var music = new Audio(url);
+			if (this.audios == null) this.audios = {};
 
-          	music.preload = "auto";
+
+			var music = this.audios[url];
+			if (music == null) {
+				music = new Audio(url);
+	          	music.preload = "auto";
+			}
+
           	if (loops === true) {
 	         	music.loop = "loop";
 	       	}
