@@ -34,19 +34,21 @@ exports.Beachplanet = Component.specialize({
 		value: function(url, loops) {
 			if (this.audios == null) this.audios = {};
 
-
 			var music = this.audios[url];
 			if (music == null) {
 				music = new Audio(url);
 	          	music.preload = "auto";
+	          	this.audios[url] = music;
+	          	if (loops === true) {
+		         	music.loop = "loop";
+	    	   	}
+	            music.addEventListener('canplay', function () {
+					music.play();
+       		     }, false);
+			} else {
+				music.play();
 			}
 
-          	if (loops === true) {
-	         	music.loop = "loop";
-	       	}
-            music.addEventListener('canplay', function () {
-				music.play();
-            }, false);
 		}
 	},
 
@@ -80,6 +82,7 @@ exports.Beachplanet = Component.specialize({
 
 	prepareForPlay: {
 		value:function() {
+    		this.playSound("sound/getruby.mp3");
 	   		this.dolphinLogoFound = false;
 			this.score = 0;
 			this.templateObjects.viewer.stop();
@@ -152,51 +155,41 @@ exports.Beachplanet = Component.specialize({
 		}
 	},
 
-	/* handle rock */
-
-	handleRockAction: {
-		value: function(event) {
-			if (this.rockRevealed === false) {
-				this.templateObjects.viewer.viewPoint = this.templateObjects.rockLogoVP;
-				this.rockRevealed = true;
+	checkAndApplyGameActionIfNeeded: {
+		value: function(actionName, viewPoint) {
+			if (this[actionName] === false) {
+				this.templateObjects.viewer.viewPoint = viewPoint;
+				this[actionName] = true;
 	   			this.score++;
 			}
 		}
 	},
 
-	/* handle door */
+	/* handle rock */
+	handleRockAction: {
+		value: function(event) {
+			this.checkAndApplyGameActionIfNeeded("rockRevealed", this.templateObjects.rockLogoVP);
+		}
+	},
 
+	/* handle door */
   	handleDoorAction: {
     	value: function(event) {
-    		if (this.doorOpened === false) {
-	   			this.templateObjects.viewer.viewPoint = this.templateObjects.cabinLogoVP;
-	   			this.doorOpened = true;
-	   			this.score++;
-    		}
+			this.checkAndApplyGameActionIfNeeded("doorOpened", this.templateObjects.cabinLogoVP);
     	}
     },
 
 	/* handle star */
-
   	handleStarAction: {
     	value: function(event) {
-    		if (this.starRevealed === false) {
-	   			this.templateObjects.viewer.viewPoint = this.templateObjects.starLogoVP;
-	   			this.starRevealed = true;
-	   			this.score++;
-    		}
+			this.checkAndApplyGameActionIfNeeded("starRevealed", this.templateObjects.starLogoVP);
     	}
     },
 
 	/* handle star */
-
   	handleLogoDolphinAction: {
     	value: function(event) {
-    		if (this.dolphinLogoFound === false) {
-		   		this.templateObjects.viewer.viewPoint = this.templateObjects.dolphinsVP;
-	   			this.dolphinLogoFound = true;
-		   		this.score++;
-    		}
+			this.checkAndApplyGameActionIfNeeded("dolphinLogoFound", this.templateObjects.dolphinsVP);
     	} 
 	}
     
