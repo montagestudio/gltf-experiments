@@ -140,7 +140,17 @@
     margin: 30px auto 0 auto;
 }
 
+.BeachPlanet-play-title {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 0;
+  text-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.25);
+}
 
+.BeachPlanet-play-subtitle {
+  color: hsla(0, 0%, 0%, 0.5);
+  font-size: 18px;
+}
 
 
 /* Score -------------------------------- */
@@ -313,3 +323,4 @@
   transition-duration: 3s;
   -montage-transform-z-origin: 0%;
 }
+

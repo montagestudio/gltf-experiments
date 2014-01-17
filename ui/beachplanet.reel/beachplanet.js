@@ -48,7 +48,6 @@ exports.Beachplanet = Component.specialize({
 			} else {
 				music.play();
 			}
-
 		}
 	},
 
