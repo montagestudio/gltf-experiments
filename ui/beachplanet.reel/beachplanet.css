@@ -168,18 +168,15 @@
     margin-bottom: .2em;
 }
 
-.BeachPlanet-score-value.digit-Badge {
-    margin: 0;
+.BeachPlanet-score-value {
+    display: inline-block;
     padding: 8px 14px;
-    font-size: inherit;
     line-height: 1;
-    color: inherit;
     border-radius: 8px;
     color: hsl(48, 100%, 67%);
     text-shadow: 1px 2px 0 hsla(0, 0%, 0%, 0.2);
-    border: none;
     background-color: hsla(29, 46%, 44%, 0.66);
-    box-shadow: inset 2px 4px 0 hsla(0,0%,0%, 0.15), 1px 2px 0 hsla(0,0%,100%, 0.1);
+    box-shadow: inset 2px 4px 0 hsla(0, 0%, 0%, 0.15), 1px 2px 0 hsla(0, 100%, 100%, 0.1);
 }
 
 
