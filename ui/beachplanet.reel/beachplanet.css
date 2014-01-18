@@ -144,12 +144,25 @@
   color: #fff;
   font-size: 36px;
   margin-bottom: 0;
-  text-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.25);
+  text-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.4);
 }
 
 .BeachPlanet-play-subtitle {
   color: hsla(0, 0%, 0%, 0.5);
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.BeachPlanet-play-link {
+    text-decoration: none;
+    color: hsl(204, 54%, 37%);
+}
+
+.BeachPlanet-play-link:hover {
+    color: hsl(204, 54%, 47%);
+}
+
+.BeachPlanet-play-link:hover {
+    color: hsl(204, 54%, 27%);
 }
 
 
