@@ -37,15 +37,15 @@ exports.Beachplanet = Component.specialize({
 			var music = this.audios[url];
 			if (music == null) {
 				music = new Audio(url);
-	          	music.preload = "auto";
-	          	this.audios[url] = music;
+	         	this.audios[url] = music;
 	          	if (loops === true) {
 		         	music.loop = "loop";
 	    	   	}
 	            music.addEventListener('canplay', function () {
 					music.play();
-       		     }, false);
+       		   	}, false);
 			} else {
+				music.currentTime = 0;
 				music.play();
 			}
 		}
@@ -142,14 +142,21 @@ exports.Beachplanet = Component.specialize({
 		}
 	},
 
+	_exploringTimeout: { value: null },
+
 	returnExploringPlanet: {
 		value: function() {
 			if (this.score < this.MAX_SCORE) {
 				var self = this;
-				setTimeout(function() {
+				if (this._exploringTimeout != null) {
+					clearTimeout(this._exploringTimeout);
+					self._exploringTimeout = null;
+				}
+				this._exploringTimeout = setTimeout(function() {
+					self._exploringTimeout = null;
 					self.templateObjects.viewer.viewPoint = self.templateObjects.planetVP;
 					self.templateObjects.viewer.allowsViewPointControl = true;
-				}, 2000);
+				}, 4000);
 			}
 		}
 	},
