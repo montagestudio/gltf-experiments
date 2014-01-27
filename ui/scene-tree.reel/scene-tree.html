@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="scene-tree.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "sceneTree"}
+            }
+        },
+
+        "scene": {
+            "prototype": "mjs-volume/runtime/scene",
+            "properties": {
+                "path": "model/penguin/penguin.json"
+            }
+        },
+
+        "viewer": {
+            "prototype": "mjs-volume/ui/view.reel",
+            "properties": {
+                "element": {
+                    "#": "viewer"
+                },
+                "scene": {
+                    "@": "scene"
+                }
+            }
+        },
+
+        "sceneTree": {
+            "prototype": "mjs-volume/ui/scene-tree.reel",
+            "properties": {
+                "element": {"#": "treeViewer"},
+                "scene": {"@": "scene"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="sceneTree" class="SceneTree">
+        <div class="viewerSplit">
+            <div data-montage-id="treeViewer" class="treeViewer"></div>
+            <div data-montage-id="viewer" class="stage"></div>
+        </div>
+    </div>
+</body>
+</html>
