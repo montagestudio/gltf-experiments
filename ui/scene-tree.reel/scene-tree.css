@@ -1,0 +1,12 @@
+.SceneTree .viewerSplit {
+    display: -webkit-flex;
+    flex-direction: row;
+}
+
+.SceneTree .treeViewer {
+    width: 300px !important;
+}
+
+.SceneTree .stage {
+    height: 400px !important;
+}
