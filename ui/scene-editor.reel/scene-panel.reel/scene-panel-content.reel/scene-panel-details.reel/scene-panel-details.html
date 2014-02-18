@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="scene-panel-details.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "scenePanelDetails"}
+            }
+        },
+
+        "noGlTFElementCondition": {
+            "prototype": "montage/ui/condition.reel",
+            "properties": {
+                "element": {"#": "noGlTFElementCondition"},
+                "removalStrategy": "hide"
+            },
+            "bindings": {
+                "condition": {"<-": "!!@owner.glTFElement"}
+            }
+        },
+
+        "componentNameLabel": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "componentNameLabel"},
+                "value": "Component 3D Name:"
+            }
+        },
+
+        "glTFElementName": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "glTFElementName"}
+            },
+            "bindings": {
+                "value": {"<-": "@owner.glTFElement.name"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="scenePanelDetails" class="ScenePanelDetails">
+        <div data-montage-id="noGlTFElementCondition">
+            <ul class="GlTFElementDetails">
+                <li class="GlTFElementDetail">
+                    <span data-montage-id="componentNameLabel" class="GlTFElementDetail-label"></span>
+                    <span data-montage-id="glTFElementName"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

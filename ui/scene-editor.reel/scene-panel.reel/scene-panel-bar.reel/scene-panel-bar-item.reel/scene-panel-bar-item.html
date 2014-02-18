@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="scene-panel-bar-item.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "scenePanelBarItem"}
+            }
+        },
+
+        "scenePanelBarItemLabel": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "scenePanelBarItemLabel"}
+            },
+            "bindings": {
+                "value": {"<-": "@owner.label"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <li data-montage-id="scenePanelBarItem" class="ScenePanelBarItem">
+        <span data-montage-id="scenePanelBarItemLabel" class="ScenePanelBarItemLabel"></span>
+    </li>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="scene-editor.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "sceneEditor"}
+            }
+        },
+
+        "scene": {
+            "prototype": "mjs-volume/runtime/scene",
+            "properties": {
+                "path": "/model/penguin/penguin.json"
+            }
+        },
+
+        "sceneTemplateExplorer": {
+            "prototype": "./scene-template-explorer.reel",
+            "properties": {
+                "element": {"#": "sceneTemplateExplorer"}
+            }
+        },
+
+        "sceneView": {
+            "prototype": "./scene-view.reel",
+            "properties": {
+                "element": {"#": "sceneView"}
+            },
+            "bindings": {
+                "scene": {"<-": "@scene"}
+            }
+        },
+
+        "sceneTreeView": {
+            "prototype": "./scene-tree-view.reel",
+            "properties": {
+                "element": {"#": "sceneTreeView"}
+            },
+            "bindings": {
+                "scene": {"<-": "@scene"}
+            }
+        },
+
+        "scenePanel": {
+            "prototype": "./scene-panel.reel",
+            "properties": {
+                "element": {"#": "scenePanel"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+<div data-montage-id="sceneEditor" class="SceneEditor">
+    <div class="SceneEditor-Column">
+        <div data-montage-id="sceneView" class="SceneEditor-Box"></div>
+        <div data-montage-id="sceneTemplateExplorer" class="SceneEditor-Box"></div>
+    </div>
+    <div class="SceneEditor-Column">
+        <div data-montage-id="sceneTreeView" class="SceneEditor-Box"></div>
+        <div data-montage-id="scenePanel" class="SceneEditor-Box"></div>
+    </div>
+</div>
+</body>
+</html>

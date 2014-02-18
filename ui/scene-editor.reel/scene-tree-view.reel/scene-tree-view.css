@@ -1,0 +1,49 @@
+.SceneTreeView {
+    -webkit-flex: 10 !important;
+    background-color: #424242;
+    flex-direction: column;
+}
+
+.SceneTreeViewHeader {
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    margin: 0;
+    padding: 8px;
+    height: 35px;
+    border-top: 1px solid hsl(0, 0%, 46%);
+    border-bottom: 1px solid hsl(0, 0%, 22%);
+    background: -webkit-linear-gradient( hsl(0, 0%, 42%), hsl(0, 0%, 32%) );
+}
+
+.SceneTreeViewHeader-name {
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 86%);
+    text-shadow: 0 -1px 0 hsl(0, 0%, 23%);
+    font-size: 18px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+.SceneTreeView .SceneGraphTree {
+    display: -webkit-flex;
+    -webkit-flex: 1;
+    padding: 10px;
+}
+
+.SceneTreeView .TreeCell {
+    margin-top: 6px;
+}
+
+.SceneTreeView .TreeCell-label {
+    color: #CACACA;
+    padding: 4px 10px;
+}
+
+.SceneTreeView .TreeCell .TreeCell-label--selected {
+    background-color: #1F1F1F;
+}
