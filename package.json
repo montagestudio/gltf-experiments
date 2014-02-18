@@ -7,6 +7,6 @@
     "q": "~0.9.7",
     "digit": "~0.4.0",
     "mjs-volume": "git://github.com/fabrobinet/mjs-volume",
-    "montage": "~0.13.9"
+    "montage": "~0.13.12"
   }
 }
