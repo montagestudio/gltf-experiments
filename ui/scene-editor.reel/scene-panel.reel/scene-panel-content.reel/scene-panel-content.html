@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="scene-panel-content.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "scenePanelContent"}
+            }
+        },
+
+        "scenePanelContentSubstitution": {
+            "prototype": "montage/ui/substitution.reel",
+            "properties": {
+                "element": {"#": "scenePanelContentSubstitution"}
+            },
+            "bindings": {
+                "switchValue": {"<-": "@owner.selectedTab.label"}
+            }
+        },
+
+        "scenePanelDetails": {
+            "prototype": "./scene-panel-details.reel",
+            "properties": {
+                "element": {"#": "scenePanelDetails"}
+            },
+            "bindings": {
+                "glTFElement": {"<-": "@owner.glTFElement"}
+            }
+        }
+
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="scenePanelContent" class="ScenePanelContent">
+        <div data-montage-id="scenePanelContentSubstitution">
+            <div data-arg="details" data-montage-id="scenePanelDetails"></div>
+        </div>
+    </div>
+</body>
+</html>

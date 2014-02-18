@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="scene-tree-view.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "sceneTreeView"}
+            }
+        },
+
+        "sceneTreeViewName": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "sceneTreeViewName"}
+            },
+            "bindings": {
+                "value": {"<-": "@owner.fileName"}
+            }
+        },
+
+        "sceneTree": {
+            "prototype": "mjs-volume/extras/scene-tree.reel",
+            "properties": {
+                "element": {"#": "sceneTree"}
+            },
+            "bindings": {
+                "scene": {"<-": "@owner.scene"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="sceneTreeView" class="SceneTreeView">
+        <header class="SceneTreeViewHeader">
+            <span data-montage-id="sceneTreeViewName" class="SceneTreeViewHeader-name"></span>
+        </header>
+        <div data-montage-id="sceneTree" class="SceneTreeView-tree"></div>
+    </div>
+</body>
+</html>

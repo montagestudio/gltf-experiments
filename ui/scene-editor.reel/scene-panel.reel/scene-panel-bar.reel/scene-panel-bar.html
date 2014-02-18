@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="scene-panel-bar.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "scenePanelBar"}
+            },
+            "bindings": {
+                "selectedTab": {"<-": "@scenePanelBarListController.selection.0"},
+                "barController": {"<-": "@scenePanelBarListController"}
+            }
+        },
+
+        "scenePanelBarListController": {
+            "prototype": "montage/core/range-controller",
+            "properties": {
+                "sortPath": "index"
+            },
+            "bindings": {
+                "content": {"<-": "@owner.items"}
+            }
+        },
+
+        "scenePanelBarList": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "scenePanelBarList"},
+                "isSelectionEnabled": true
+            },
+            "bindings": {
+                "contentController": {"<-": "@scenePanelBarListController"}
+            }
+        },
+
+        "scenePanelBarItem": {
+            "prototype": "./scene-panel-bar-item.reel",
+            "properties": {
+                "element": {"#": "scenePanelBarItem"}
+            },
+            "bindings": {
+                "label": {"<-": "@scenePanelBarList.objectAtCurrentIteration.label"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="scenePanelBar" class="ScenePanelBar">
+        <ul data-montage-id="scenePanelBarList"  class="ScenePanelBar-list">
+            <li data-montage-id="scenePanelBarItem" class="ScenePanelBarItem"></li>
+        </ul>
+    </div>
+</body>
+</html>

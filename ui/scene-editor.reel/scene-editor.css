@@ -1,0 +1,41 @@
+.montage-invisible {
+    display: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    -webkit-user-select: none;
+}
+
+.SceneEditor {
+    display: -webkit-flex;
+    -webkit-flex: 1;
+    background: #EBEBEB;
+    height: 100%;
+}
+
+.SceneEditor-Column {
+    display: -webkit-flex;
+    -webkit-flex: 1;
+    -webkit-flex-direction: column;
+}
+
+.SceneEditor-Column:nth-of-type(1) {
+    border-right: 1px solid #383838;
+    -webkit-flex: 2;
+}
+
+.SceneEditor-Box {
+    display: -webkit-flex;
+    -webkit-flex: 4;
+    overflow-x: auto;
+}
+
+.SceneEditor-Box:nth-of-type(1) {
+    border-bottom: 1px solid #383838;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="scene-view.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "sceneView"}
+            }
+        },
+
+        "viewer": {
+            "prototype": "mjs-volume/ui/scene-view.reel",
+            "properties": {
+                "element": {"#": "sceneViewer"}
+            },
+            "bindings": {
+                "scene": {"<-": "@owner.scene"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="sceneView" class="SceneView">
+        <div data-montage-id="sceneViewer"></div>
+    </div>
+</body>
+</html>
