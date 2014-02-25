@@ -1,3 +1,15 @@
 .SceneTemplateExplorer {
     background-color: #DBDBDB;
 }
+
+.SceneTemplateExplorer .TemplateExplorer {
+    flex: 1;
+}
+
+.SceneTemplateExplorer .TemplateExplorer-header.Bar {
+    display: none;
+}
+
+.SceneTemplateExplorer .TemplateObjectCell--notCollapsible {
+    margin-right: 20px;
+}

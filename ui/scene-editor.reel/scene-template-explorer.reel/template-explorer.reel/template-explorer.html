@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="template-explorer.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "template-explorer"},
+                "templateTreeController": {"@": "templateTreeController"}
+            },
+            "bindings": {
+                "classList.has('Filament--willAcceptDrop')": {"<-": "@owner._willAcceptDrop"},
+                "templateObjectFilterTerm": {"<->": "editingDocument.sideData.templateObjectFilterTerm"},
+                "hiddenCardsCount": {"<-": "@owner.templateObjectsController.content.filter{!!editorMetadata.get('isHidden')}.length"}
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "hiddenCount": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "hiddenCount"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@owner.hiddenCardsCount"}
+            }
+        },
+        "ownerObjectCell": {
+            "prototype": "./owner-object-cell.reel",
+            "properties": {
+                "element": {"#": "ownerObjectCell"}
+            },
+            "bindings": {
+                "showBindings": {"<-": "@owner.showBindings"},
+                "showListeners": {"<-": "@owner.showListeners"},
+                "templateObject": {"<-": "@owner.ownerObject"},
+                "templateObjectsController": {"<-": "@owner.templateObjectsController"}
+            }
+        },
+        "showBindings": {
+            "prototype": "matte/ui/input-checkbox.reel",
+            "properties": {
+                "element": {"#": "showBindings"}
+            },
+            "bindings": {
+                "checked": {"<->": "@owner.showBindings"}
+            }
+        },
+        "showHidden": {
+            "prototype": "matte/ui/input-checkbox.reel",
+            "properties": {
+                "element": {"#": "showHidden"}
+            },
+            "bindings": {
+                "checked": {"<->": "@owner.showHidden"}
+            }
+        },
+        "showListeners": {
+            "prototype": "matte/ui/input-checkbox.reel",
+            "properties": {
+                "element": {"#": "showListeners"}
+            },
+            "bindings": {
+                "checked": {"<->": "@owner.showListeners"}
+            }
+        },
+        "templateObjectCell": {
+            "prototype": "./template-object-cell.reel",
+            "properties": {
+                "element": {"#": "templateObjectCell"}
+            },
+            "bindings": {
+                "showBindings": {"<-": "@owner.showBindings"},
+                "showListeners": {"<-": "@owner.showListeners"},
+                "editingDocument": {"<-": "@owner.editingDocument"},
+                "templateExplorer": {"<-": "@owner"},
+                "templateObject": {"<-": "@templateObjectCell.parentComponent.iteration.content.templateObject"},
+                "isExpanded": {"<->": "@templateObjectCell.parentComponent.iteration.expanded"},
+                "isCollapsible": {"<->": "@templateObjectCell.parentComponent.iteration.children.length"}
+            }
+        },
+
+        "templateTreeController": {
+            "prototype": "ui/scene-editor.reel/core/tree-controller",
+            "properties": {
+                "childrenPath": "children",
+                "expandedPath": "expanded",
+                "initiallyExpanded": true
+            },
+            "bindings": {
+                "content": {"<-": "@owner.editingDocument.templateObjectsTree"}
+            }
+        },
+        "templateNodeList": {
+            "prototype": "../tree.reel",
+            "properties": {
+                "element": {"#": "templateNodeList"},
+                "isSelectionEnabled": true,
+                "ignoreRoot": true
+            },
+            "bindings": {
+                "treeController": {"<-": "@owner.templateTreeController"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="template-explorer" class="TemplateExplorer">
+        <header class="TemplateExplorer-header Bar">
+            <div>
+                <input data-montage-id="showBindings" class="TemplateExplorer-filterToggle TemplateExplorer-filterToggle--binding" type="checkbox" title="Toggle Bindings">
+                <input data-montage-id="showListeners" class="TemplateExplorer-filterToggle TemplateExplorer-filterToggle--listener" type="checkbox" title="Toggle Listeners">
+            </div>
+            <label class="TemplateExplorer-hiddenControl">
+                <input data-montage-id="showHidden" type="checkbox" class="TemplateExplorer-hiddenCheckbox" title="Toggle Hidden">
+                <span data-montage-id="hiddenCount" class="TemplateExplorer-header-counter"></span>
+            </label>
+        </header>
+        <section data-montage-id="ownerObjectCell"></section>
+        <ul data-montage-id="templateNodeList" class="TemplateExplorer-list">
+            <li data-montage-id="templateObjectCell" data-arg="treeNode"></li>
+        </ul>
+    </div>
+</body>
+</html>
