@@ -14,6 +14,28 @@ exports.SceneTemplateExplorer = Component.specialize(/** @lends SceneTemplateExp
         value: function SceneTemplateExplorer() {
             this.super();
         }
+    },
+
+    editingDocument: {
+        value: null
+    },
+
+    enterDocument: {
+        value: function (firstime) {
+            if (firstime) {
+                this.addRangeAtPathChangeListener("editingDocument.selectedObjects", this, "handleSelectElement");
+            }
+        }
+    },
+
+    templateObjectsController: {
+        value: null
+    },
+
+    handleSelectElement: {
+        value: function (event) {
+
+        }
     }
 
 });

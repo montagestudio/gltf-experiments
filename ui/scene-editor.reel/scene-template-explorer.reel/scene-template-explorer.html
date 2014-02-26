@@ -7,7 +7,28 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "sceneTemplateExplorer"}
+                "element": {"#": "sceneTemplateExplorer"},
+                "templateObjectsController": {"@": "templateObjectsController"}
+            }
+        },
+
+        "templateObjectsController": {
+            "prototype": "montage/core/range-controller",
+            "bindings": {
+                "content": {"<-": "@owner.editingDocument.editingProxies"},
+                "selection": {"<->": "@owner.editingDocument.selectedObjects"}
+            }
+        },
+
+        "templateExplorer": {
+            "prototype": "./template-explorer.reel",
+            "properties": {
+                "element": {"#": "templateExplorer"}
+            },
+            "bindings": {
+                "ownerObject": {"<-": "@owner.editingDocument.editingProxyMap.owner"},
+                "templateObjectsController": {"<-": "@owner.templateObjectsController"},
+                "editingDocument": {"<-": "@owner.editingDocument"}
             }
         }
     }
@@ -15,6 +36,7 @@
 </head>
 <body>
     <div data-montage-id="sceneTemplateExplorer" class="SceneTemplateExplorer">
+        <div data-montage-id="templateExplorer"></div>
     </div>
 </body>
 </html>
