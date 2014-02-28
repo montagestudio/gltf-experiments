@@ -8,16 +8,16 @@ var Component = require("montage/ui/component").Component;
  * @class SceneView
  * @extends Component
  */
-exports.SceneView = Component.specialize(/** @lends SceneView# */ {
+exports.Stage3D = Component.specialize(/** @lends SceneView# */ {
 
     constructor: {
-        value: function SceneView() {
+        value: function Stage3D() {
             this.super();
         }
     },
 
     scene: {
-        value: null
+    	value: null
     }
 
 });

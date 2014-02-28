@@ -2,30 +2,31 @@
 <html>
 <head>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="scene-view.css">
+    <link rel="stylesheet" type="text/css" href="stage-3D.css">
     <script type="text/montage-serialization">
     {
         "owner": {
             "properties": {
-                "element": {"#": "sceneView"}
+                "element": { "#": "stage3D" }
             }
         },
-
-        "viewer": {
+        "sceneView": {
             "prototype": "mjs-volume/ui/scene-view.reel",
             "properties": {
-                "element": {"#": "sceneViewer"}
+                "element": {"#": "sceneView"}
             },
             "bindings": {
-                "scene": {"<-": "@owner.scene"}
+                "scene": {"<-": "@owner.scene" }
             }
         }
     }
     </script>
 </head>
 <body>
-    <div data-montage-id="sceneView" class="SceneView">
-        <div data-montage-id="sceneViewer"></div>
+    <div>
+        <div data-montage-id="stage3D" class="Stage3D">
+            <div data-montage-id="sceneView"></div>
+        </div>
     </div>
 </body>
 </html>
