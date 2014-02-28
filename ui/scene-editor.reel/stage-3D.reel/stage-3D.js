@@ -18,6 +18,28 @@ exports.Stage3D = Component.specialize(/** @lends SceneView# */ {
 
     scene: {
     	value: null
+    },
+
+    sceneDidDraw: {
+    	value: function() {
+    		if (this.sceneView.selectedNode) {
+    			if (this.sceneView.selectedNode.glTFElement) {
+					this.sceneView._displayBBOX(this.sceneView.selectedNode.glTFElement);
+    			}
+    		}
+    	}
+    },
+
+    sceneView: {
+    	get: function() {
+    		return this.templateObjects.sceneView;
+    	}
+    },
+
+    templateDidLoad: {
+        value: function() {
+        	this.sceneView.delegate = this;
+        }
     }
 
 });
