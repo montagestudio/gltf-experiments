@@ -21,10 +21,10 @@
             }
         },
 
-        "scenePanelDetails": {
-            "prototype": "./scene-panel-details.reel",
+        "scenePanelNode": {
+            "prototype": "./scene-panel-node.reel",
             "properties": {
-                "element": {"#": "scenePanelDetails"}
+                "element": {"#": "scenePanelNode"}
             },
             "bindings": {
                 "glTFElement": {"<-": "@owner.glTFElement"}
@@ -37,7 +37,7 @@
 <body>
     <div data-montage-id="scenePanelContent" class="ScenePanelContent">
         <div data-montage-id="scenePanelContentSubstitution">
-            <div data-arg="details" data-montage-id="scenePanelDetails"></div>
+            <div data-arg="node" data-montage-id="scenePanelNode"></div>
         </div>
     </div>
 </body>

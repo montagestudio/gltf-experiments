@@ -8,12 +8,20 @@ var Component = require("montage/ui/component").Component,
     CONFIGURATION = {
         ITEMS: [
             {
-                label: "details",
+                label: "node",
                 index: 0
             },
             {
-                label: "view",
+                label: "material",
                 index: 1
+            },
+            {
+                label: "camera",
+                index: 2
+            },
+            {
+                label: "light",
+                index: 3
             }
         ]
     };

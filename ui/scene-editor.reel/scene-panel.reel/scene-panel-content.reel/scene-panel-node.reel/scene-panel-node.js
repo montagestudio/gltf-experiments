@@ -1,17 +1,17 @@
 /**
- * @module ui/scene-panel-details.reel
+ * @module ui/scene-panel-node.reel
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
 
 /**
- * @class ScenePanelDetails
+ * @class ScenePanelNode
  * @extends Component
  */
-exports.ScenePanelDetails = Component.specialize(/** @lends ScenePanelDetails# */ {
+exports.ScenePanelNode = Component.specialize(/** @lends ScenePanelNode# */ {
 
     constructor: {
-        value: function ScenePanelDetails() {
+        value: function ScenePanelNode() {
             this.super();
         }
     },
