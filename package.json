@@ -6,9 +6,8 @@
     "collections": "~0.2.2",
     "q": "~0.9.7",
     "digit": "~0.5.0",
-    "palette": "git+ssh://git@github.com:declarativ/palette.git",
-    "mjs-volume": "git+ssh://git@github.com:fabrobinet/mjs-volume.git",
+    "mjs-volume": "git://github.com/fabrobinet/mjs-volume",
     "native": "0.2.0",
-    "montage": "~0.14.0"
+    "montage": "~0.14.1"
   }
 }
