@@ -16,8 +16,18 @@ exports.Stage3D = Component.specialize(/** @lends SceneView# */ {
         }
     },
 
+    _scene: { value: null },
+
     scene: {
-    	value: null
+        get: function() {
+            return this._scene;
+        },
+        set: function(value) {
+            this._scene = value;
+            if (this._scene != null) {
+                this._scene.shouldBeHitTested = true;
+            }
+        }
     },
 
     sceneDidDraw: {
