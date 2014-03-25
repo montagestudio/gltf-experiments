@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/montage-serialization">
+            {
+                "owner": {
+                    "properties": {
+                        "element": {"#": "component"}
+                    }
+                },
+
+                "scene": {
+                    "prototype": "mjs-volume/runtime/scene",
+                    "properties": {
+                        "path": "$SCENE_PATH$"
+                    }
+                },
+
+                "sceneView": {
+                    "prototype": "mjs-volume/ui/scene-view.reel",
+                    "properties": {
+                        "element": {"#": "sceneView"}
+                    },
+                    "bindings": {
+                        "scene": {"<-": "@scene"}
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div data-montage-id="component">
+            <div data-montage-id="sceneView"></div>
+        </div>
+    </body>
+</html>

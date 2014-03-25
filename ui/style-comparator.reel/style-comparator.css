@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.StyleComparator {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    background-color: #E1E1E1;
+}
+
+.StyleComparator-Column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.StyleComparator-Column:nth-of-type(2) {
+    flex: 1.5;
+}
+
+#css {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 60%;
+    bottom: 68%;
+    margin-right: 5px;
+    margin-bottom: -19px;
+    background: white;
+    border: 1px solid #B9B9B9;
+    overflow-x: auto;
+}
+
+#htmlScene {
+    position: absolute;
+    top: 32%;
+    left: 10px;
+    right: 60%;
+    bottom: 34%;
+    margin-top: 29px;
+    margin-right: 5px;
+    margin-bottom: -19px;
+    background: white;
+    border: 1px solid #B9B9B9;
+    overflow-x: auto;
+}
+
+#html {
+    position: absolute;
+    margin-top: 29px;
+    margin-right: 5px;
+    top: 66%;
+    left: 10px;
+    right: 60%;
+    bottom: 10px;
+    background: white;
+    border: 1px solid #B9B9B9;
+    overflow-x: auto;
+}
+
+.StyleComparator-Box {
+    display: flex;
+    flex: 1;
+    border: 1px solid #B9B9B9;
+    background: white;
+}
+
+#scenePreview {
+    margin: 10px 10px 0 10px;
+}
+
+#htmlPreview {
+    margin: 10px;
+}

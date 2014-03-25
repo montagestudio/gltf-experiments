@@ -1,0 +1,11 @@
+{
+    "name": "mfiddle-frame",
+    "version": "0.1.0",
+    "dependencies": {
+        "montage" : "*",
+        "matte" : "*",
+        "digit" : "*",
+        "mjs-volume": "*"
+    },
+    "bundle": true
+}

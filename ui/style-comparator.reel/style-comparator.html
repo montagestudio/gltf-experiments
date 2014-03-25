@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style-comparator.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "owner"}
+            }
+        },
+
+        "cssView": {
+            "prototype": "./content-view.reel",
+            "properties": {
+                "element": {"#": "css"},
+                "title": "CSS"
+            }
+        },
+
+        "cssCodeMirror": {
+            "prototype": "./code-mirror.reel",
+            "properties": {
+                "element": {"#": "cssCodeMirror"},
+                "mode": "css",
+                "lineNumbers": true
+            }
+        },
+
+        "htmlSceneView": {
+            "prototype": "./content-view.reel",
+            "properties": {
+                "element": {"#": "htmlScene"},
+                "title": "HTML Scene"
+            }
+        },
+
+        "htmlSceneCodeMirror": {
+            "prototype": "./code-mirror.reel",
+            "properties": {
+                "element": {"#": "htmlSceneCodeMirror"},
+                "mode": "htmlmixed",
+                "lineNumbers": true
+            }
+        },
+
+        "htmlView": {
+            "prototype": "./content-view.reel",
+            "properties": {
+                "element": {"#": "html"},
+                "title": "HTML"
+            }
+        },
+
+        "htmlCodeMirror": {
+            "prototype": "./code-mirror.reel",
+            "properties": {
+                "element": {"#": "htmlCodeMirror"},
+                "mode": "htmlmixed",
+                "lineNumbers": true
+            }
+        },
+
+        "scenePreview": {
+            "prototype": "./preview.reel",
+            "properties": {
+                "element": {"#": "scenePreview"},
+                "contentProperty": "htmlScene"
+            },
+            "bindings": {
+                "controller": {"<-": "@owner"}
+            }
+        },
+
+        "htmlPreview": {
+            "prototype": "./preview.reel",
+            "properties": {
+                "element": {"#": "htmlPreview"},
+                "contentProperty": "html"
+            },
+            "bindings": {
+                "controller": {"<-": "@owner"}
+            }
+        }
+
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="owner" class="StyleComparator">
+
+        <div class="StyleComparator-Column">
+            <div id="css" data-montage-id="css">
+                <div data-montage-id="cssCodeMirror"></div>
+            </div>
+
+            <div id="htmlScene" data-montage-id="htmlScene">
+                <div data-montage-id="htmlSceneCodeMirror"></div>
+            </div>
+
+            <div id="html" data-montage-id="html">
+                <div data-montage-id="htmlCodeMirror"></div>
+            </div>
+        </div>
+
+        <div class="StyleComparator-Column">
+            <div id="scenePreview" data-montage-id="scenePreview"class="StyleComparator-Box"></div>
+            <div id="htmlPreview" data-montage-id="htmlPreview" class="StyleComparator-Box"></div>
+        </div>
+
+    </div>
+</body>
+</html>
