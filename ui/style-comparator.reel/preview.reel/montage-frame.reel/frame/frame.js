@@ -4,7 +4,7 @@ var Template = require("montage/core/template").Template,
     rootComponent = require("montage/ui/component").__root__;
 
 window.Frame = {
-    _MODULE_ID: "mfiddle",
+    _MODULE_ID: "gltf-experiment",
     _javascript: document.querySelector('script[type="text/montage-javascript"]'),
     reset: function() {
         var childComponents = rootComponent.childComponents,

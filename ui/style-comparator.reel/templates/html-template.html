@@ -4,21 +4,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/montage-serialization">
             {
-                "slider": {
-                    "prototype": "digit/ui/slider.reel",
+                "owner": {
                     "properties": {
-                        "element": {"#": "slider"},
-                        "value": 50
-                    }
-                },
-
-                "text": {
-                    "prototype": "montage/ui/text.reel",
-                    "properties": {
-                        "element": {"#": "text"}
-                    },
-                    "bindings": {
-                        "value": {"<-": "@slider.value"}
+                        "element": {"#": "component"}
                     }
                 }
             }
@@ -26,7 +14,8 @@
     </head>
 
     <body>
-        <input type="slider" data-montage-id="slider" class="slider" />
-        <h2 data-montage-id="text"></h2>
+    <div data-montage-id="component">
+        <div class="animate box"></div>
+    </div>
     </body>
 </html>

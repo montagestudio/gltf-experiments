@@ -51,11 +51,6 @@ exports.MontageFrame = Component.specialize(/** @lends module:"montage/ui/montag
     _serializationElement: {value: null},
     _javascriptElement: {value: null},
 
-    logMessages: {
-        distinct: true,
-        value: []
-    },
-
     enterDocument: {
         value: function(firstTime) {
             var self = this;
@@ -70,29 +65,9 @@ exports.MontageFrame = Component.specialize(/** @lends module:"montage/ui/montag
                         self._iframeDocument = self._element.contentDocument;
                         self._cssElement = self._iframeDocument.head.querySelector("style");
                         self._javascriptElement = self._iframeDocument.head.querySelector("script[type='text/montage-javascript']");
-
-                        self._iframeWindow.console.debug = self.debug.bind(self);
-                        self._iframeWindow.console.log = self.log.bind(self);
                     }
                 }, false);
             }
-        }
-    },
-
-    debug: {
-        value: function(message) {
-            if (message.indexOf("Syntax error") == 0) {
-                this._iframeDocument.body.innerHTML = "<pre>" + message + "</pre>";
-            } else {
-                console.debug.apply(console, arguments);
-            }
-        }
-    },
-
-    log: {
-        value: function(message) {
-            this.logMessages.push(Array.prototype.join.call(arguments, " "));
-            console.log.apply(console, arguments);
         }
     },
 

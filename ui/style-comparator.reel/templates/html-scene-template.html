@@ -25,6 +25,17 @@
                     "bindings": {
                         "scene": {"<-": "@scene"}
                     }
+                },
+
+                "hat": {
+                    "prototype": "mjs-volume/runtime/node",
+                    "properties": {
+                        "id": "TopHat",
+                        "scene": { "@": "scene"}
+                    },
+                    "bindings": {
+                        "classList.has('animate')": { "<-": "true"}
+                    }
                 }
             }
         </script>
