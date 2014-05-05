@@ -74,9 +74,9 @@ exports.Preview = Component.specialize(/** @lends Preview# */ {
     _update: {
         value: function() {
             if (this.templateObjects && this.html) {
-                var html = this.html.replace('<-', '&#60;&#8208;'),
-                    parser = new DOMParser(),
-                    doc = parser.parseFromString(html, "text/xml");
+                var doc = document.implementation.createHTMLDocument("");
+
+                doc.documentElement.innerHTML = this.html;
 
                 if (doc) {
                    var elements = doc.getElementsByTagName("body");
