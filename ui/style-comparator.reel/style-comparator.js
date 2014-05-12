@@ -70,6 +70,7 @@ exports.StyleComparator = Component.specialize(/** @lends StyleComparator# */ {
         value: function (firstime) {
             if (firstime) {
                 this.templateObjects.htmlCodeMirror._element.addEventListener('keyup', this);
+                this.templateObjects.htmlSceneCodeMirror._element.addEventListener('keyup', this);
                 this.templateObjects.cssCodeMirror._element.addEventListener('keyup', this);
             }
         }
@@ -80,6 +81,7 @@ exports.StyleComparator = Component.specialize(/** @lends StyleComparator# */ {
             event.stopImmediatePropagation();
 
             this.templateObjects.htmlPreview.scheduleUpdate();
+            this.templateObjects.scenePreview.scheduleUpdate();
         }
     },
 
